@@ -1,6 +1,13 @@
+import Container from "../components/Container";
+import Logo from "../components/Logo";
+import Navbar from "../components/Navbar";
+
 const Header = () => {
     return (
-        <> Header </>
+        <Container bgColor="transparent">
+            <Logo/>
+            <Navbar/>
+        </Container>
     )
 }
 

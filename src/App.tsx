@@ -8,7 +8,7 @@ import Skill from "./pages/Skill"
 function App() {
 
 	return (
-		<div className="container">
+		<div className="container flex flex-col items-center justify-center w-full">
 			<Header />
 			<Hero />
 			<About />

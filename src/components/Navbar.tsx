@@ -7,14 +7,13 @@ const Navbar = () => {
         {title: 'About', link: "/about"},
         {title: 'Skills', link: "/skills"},
         {title: 'Projects', link: "/projects"},
-        {title: 'Contact', link: "/contact"},
     ]
 
     return (
-        <nav className="flex flex-row justify-between items-center w-full mx-5">
+        <nav className="flex flex-row items-center w-full">
             { navbarArray.map((item, index) => (
-                <div key={index}>
-                    <a href={item.link}>{item.title}</a>
+                <div key={index} className="mx-5">
+                    <a href={item.link} className="text-primary text-2xl font-bold">{item.title}</a>
                 </div>
             ))}
         </nav>

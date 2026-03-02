@@ -1,12 +1,16 @@
-import Container from "../components/Container";
-import Logo from "../components/Logo";
+import Container from "../components/ui/Container";
 import Navbar from "../components/Navbar";
+import Circle from "../components/ui/Circle";
 
 const Header = () => {
     return (
         <Container bgColor="transparent">
-            <Logo/>
-            <Navbar/>
+            <Circle />
+            <Navbar />
+            <Container>
+                <Circle />
+                <Circle />
+            </Container>
         </Container>
     )
 }

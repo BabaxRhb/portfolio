@@ -1,16 +1,19 @@
+import SwitchLangBtn from "../../feature/language/component/SwitchLangBtn";
+import SwitchModeThemeBtn from "../../feature/mode/component/SwitchModeThemeBtn";
 import Navbar from "../components/Navbar";
-import Circle from "../components/ui/Circle";
+import { NavigationBtn } from "../components/ui/Btn";
 import Container from "../components/ui/Container";
 
 
 const Header = () => {
+
     return (
-        <Container bgColor="transparent" spacing={2}>
-            <Circle />
+        <Container spacing={2}>
+            <NavigationBtn link={'/'} />
             <Navbar />
             <Container spacing={2}>
-                <Circle />
-                <Circle />
+                <SwitchLangBtn />
+                <SwitchModeThemeBtn />
             </Container>
         </Container>
     )

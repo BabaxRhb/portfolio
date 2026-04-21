@@ -6,14 +6,14 @@ interface TextProps {
     textColor?: string;
 }
 
-const Text = ({ variant, children, textColor }: TextProps) => {
+const CustomText = ({ variant, children, textColor }: TextProps) => {
 
-    const textColorClass = textColor ? `text-${textColor}` : 'text-black';
-    const defaultStyle = 'text-center'
+    const textColorClass = textColor ? `text-${textColor}` : 'text-text';
+    const defaultStyle = 'text-center';
 
     switch (variant) {
         case 'h1':
-            return <h1 className={`${defaultStyle} ${textColorClass} text-4xl`}>{children}</h1>;
+            return <h1 className={`${defaultStyle} ${textColorClass} text-4xl text-text`}>{children}</h1>;
         case 'h2':
             return <h2 className={`${defaultStyle} ${textColorClass} text-3xl`}>{children}</h2>;
         case 'h3':
@@ -27,4 +27,4 @@ const Text = ({ variant, children, textColor }: TextProps) => {
     }
 }
 
-export default Text;
+export default CustomText;

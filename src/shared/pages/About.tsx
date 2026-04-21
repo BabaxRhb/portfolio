@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Container from "../components/ui/Container";
-import Text from "../components/Text";
+import CustomText from "../components/Text";
 
 const About = () => {
 
@@ -8,9 +8,9 @@ const About = () => {
 
     return (
         <Container spacing={10} direction="column">
-            <Text variant='h3'>{t("home.title")}</Text>
-            <Text variant='h3'>{t("home.subtitle")}</Text>
-            <Text variant='p'>{t("home.body")}</Text>
+            <CustomText variant='h3'>{t("home.title")}</CustomText>
+            <CustomText variant='h3'>{t("home.subtitle")}</CustomText>
+            <CustomText variant='p'>{t("home.body")}</CustomText>
         </Container>
     )
 }

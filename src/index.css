@@ -1,9 +1,35 @@
 @import "tailwindcss";
 
+@layer base {
+  html, body, #root {
+    @apply h-full m-0;
+  }
+
+  body {
+    @apply bg-background text-text;
+  }
+}
+
 @theme{
- --color-text: #0A1A33;
- --color-background: #F7FBFD;
- --color-primary: #1B3F65;
- --color-secondary: #B1CEE7;
- --color-accent: #497EA7
+ --color-text: var(--text);
+ --color-background: var(--background);
+ --color-primary: var(--primary);
+ --color-secondary: var(--secondary);
+ --color-accent: var(--accent)
 };
+
+:root {
+    --background: #F7FBFD;
+    --text: #0A1A33;
+    --primary: #1B3F65;
+    --secondary: #B1CEE7;
+    --accent: #497EA7;
+}
+
+.dark {
+    --background: #020608;
+    --text: #ccdcf5;
+    --primary: #9abee4;
+    --secondary: #18354e;
+    --accent: #588db6;
+}

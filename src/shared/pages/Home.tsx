@@ -1,11 +1,16 @@
+import { useTranslation } from "react-i18next";
+import Container from "../components/ui/Container";
+import CustomText from "../components/Text";
 
 const Home = () => {
+    const [ t ] = useTranslation("global");
+
     return (
-        <div>
-            <h1>Hi, I'm Barbara Randrianarisaona</h1>
-            <h1>Creative FullStack Developper</h1>
-            <h3>I blend art and code to build thoughtful, human-centered web experiences.</h3>
-        </div>
+        <Container spacing={10} direction="column">
+            <CustomText variant='h3'>{t("home.title")}</CustomText>
+            <CustomText variant='h3'>{t("home.subtitle")}</CustomText>
+            <CustomText variant='p'>{t("home.body")}</CustomText>
+        </Container>
     )
 }
 

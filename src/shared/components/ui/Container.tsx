@@ -17,7 +17,7 @@ const Container = ({
 	const defaultSetting = "w-full px-3 py-5 flex justify-center items-center";
 
 	const flexDirection = direction === 'row' ? 'flex-row' : 'flex-col';
-	const backGroundColor = bgColor ? `bg-${bgColor}` : 'bg-white';
+	const backGroundColor = bgColor ? `bg-${bgColor}` : 'bg-background';
 
 	const gapStyle = spacing ? { gap: `${spacing * 0.25}rem` } : {};
 

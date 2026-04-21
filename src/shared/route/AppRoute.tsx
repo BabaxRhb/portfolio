@@ -1,23 +1,14 @@
 import { Route, Routes } from "react-router-dom"
-import type { ChildrenProps } from "../data/type"
 
-import Header from "../layouts/Header"
 import Home from "../pages/Home"
 import About from "../pages/About"
 import Skill from "../pages/Skill"
 import Contact from "../pages/Contact"
 import Project from "../pages/Project"
 
-const GeneralLayout = ({ children } : ChildrenProps) => {
-    return (
-        <div className="flex flex-col justify-center mx-auto max-w-50">
-            <Header />
-            <div className="w-full overflow-auto">
-                {children}
-            </div>
-        </div>
-    )
-}
+import GeneralLayout from "../layouts/Layout"
+
+
 
 const AppRoute = () => {
     return (

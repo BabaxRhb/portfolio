@@ -1,5 +1,6 @@
-import AppProvider from "./providers/AppProvider"
-import AppRoute from "./route/AppRoute"
+import AppProvider from "./shared/providers/AppProvider"
+import AppRoute from "./shared/route/AppRoute"
+
 
 function App() {
 	return (

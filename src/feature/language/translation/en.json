@@ -1,0 +1,16 @@
+{
+    "home" : {
+        "title": "Hi, I'm Barbara Randrianarisaona",
+        "subtitle": "Creative FullStack Junior Developer",
+        "body": "I blend art and code to build thoughtful, human-centered web experiences."
+    },
+
+    "about": {
+        "paragraph": [
+            "I’m from Madagascar, where I earned a degree in Chemical Engineering. I took a job in the field of EHS (Environment, Health and Safety) where I quickly grew frustrated with repetitive tasks and manual processes.\n\nI wanted to automate, optimize, and build tools that actually make work easier. That curiosity led me to coding which I learned step by step on my own.",
+            "Then a life-changing opportunity appeared : School 42 opened in my country. I made the decision to fully commit in learning computer science and software development.",
+            "Alongside IT, I’ve always loved art : drawing, painting, sculpting, and later UI/UX design.\n\nFrontend development felt natural to me: it’s like drawing with code. Since functionality matters as much as aesthetics, I’m also actively developing my Backend skills.",
+            "Today, I’m a Fullstack Junior Developer who enjoys creating creative, efficient solutions for people who, like I once did, are tired of repetitive work and want tools that genuinely improve their daily lives."
+        ]
+    }
+}

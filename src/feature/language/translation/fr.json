@@ -1,0 +1,15 @@
+{
+  "home": {
+    "title": "Bonjour, je suis Barbara Randrianarisaona",
+    "subtitle": "Développeuse FullStack Junior Créative",
+    "body": "Je combine art et code pour créer des expériences web centrées sur l’humain."
+  },
+  "about": {
+    "paragraph": [
+      "Je viens de Madagascar, où j’ai obtenu un diplôme en génie chimique. J’ai travaillé dans le domaine HSE (Hygiène, Sécurité et Environnement), où j’ai rapidement ressenti de la frustration face aux tâches répétitives et aux processus manuels.\n\nJe voulais automatiser, optimiser et créer des outils qui rendent réellement le travail plus simple. Cette curiosité m’a conduite à apprendre la programmation, étape par étape, en autodidacte.",
+      "Puis une opportunité qui a changé ma vie s’est présentée : l’école 42 a ouvert dans mon pays. J’ai décidé de m’engager pleinement dans l’apprentissage de l’informatique et du développement logiciel.",
+      "En parallèle de l’informatique, j’ai toujours aimé l’art : le dessin, la peinture, la sculpture, puis le design UI/UX.\n\nLe développement frontend m’est venu naturellement : c’est comme dessiner avec du code. Puisque la fonctionnalité est aussi importante que l’esthétique, je développe également activement mes compétences en backend.",
+      "Aujourd’hui, je suis une développeuse fullstack junior qui aime créer des solutions créatives et efficaces pour les personnes qui, comme moi auparavant, sont fatiguées des tâches répétitives et souhaitent des outils qui améliorent réellement leur quotidien."
+    ]
+  }
+}

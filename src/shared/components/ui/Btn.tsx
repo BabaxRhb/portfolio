@@ -3,27 +3,31 @@ import { useNavigate } from "react-router-dom";
 interface BtnProps {
     link?: string;
     text?: string;
+    size?: string;
+    imgUrl?: string;
     onClick?: () => void;
 }
 
-const NavigationBtn = ({ link, text }: BtnProps) => {
+const NavigationBtn = ({ link, text, size, imgUrl }: BtnProps) => {
 
     const navigate = useNavigate();
 
     return (
         <button 
-            className="w-20 h-20 rounded-full bg-secondary"
+            className={`w-${size || '10'} h-${size || '10'} rounded-full bg-secondary`}
             onClick={() => link ? navigate(link) : null}
-        >{text}</button>
+        >
+            {imgUrl ? <img src={imgUrl} alt={text} /> : text}
+        </button>
     )
 }
 
-const ActionBtn = ({ text, onClick }: BtnProps) => (
+const ActionBtn = ({ text, onClick, size, imgUrl }: BtnProps) => (
     <button 
-        className="w-20 h-20 rounded-full bg-secondary"
+        className={`w-${size || '10'} h-${size || '10'} rounded-full bg-secondary`}
         onClick={onClick}
     >
-        {text}
+        {imgUrl ? <img src={imgUrl} alt={text} /> : text}
     </button>
 )
 

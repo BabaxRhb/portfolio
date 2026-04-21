@@ -3,9 +3,12 @@ import { useModeTheme } from "../provider/ModeThemeProvider";
 
 const SwitchModeThemeBtn = () => {
 
-    const { toggleModeTheme } = useModeTheme();
+    const { toggleModeTheme, theme } = useModeTheme();
 
-    return <ActionBtn onClick={toggleModeTheme} />
+    if (theme === 'dark') {
+        return <ActionBtn onClick={toggleModeTheme} imgUrl="/public/images/dark-mode.svg" />
+    }
+    return <ActionBtn onClick={toggleModeTheme} imgUrl="/public/images/light-mode.svg" />
 }
 
 export default SwitchModeThemeBtn;

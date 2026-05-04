@@ -5,12 +5,16 @@ import CustomText from "../components/Text";
 const About = () => {
 
     const [ t ] = useTranslation("global");
+    const paragraph  = t("about.paragraph", { returnObjects: true }) as string[];
 
     return (
         <Container spacing={10} direction="column">
-            <CustomText variant='h3'>{t("home.title")}</CustomText>
-            <CustomText variant='h3'>{t("home.subtitle")}</CustomText>
-            <CustomText variant='p'>{t("home.body")}</CustomText>
+            <CustomText variant='h3'>{t("about.title")}</CustomText>
+            {
+                paragraph.map((p, index) => (
+                    <CustomText key={index} variant='p'>{p}</CustomText>
+                ))
+            }
         </Container>
     )
 }

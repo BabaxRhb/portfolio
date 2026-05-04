@@ -13,8 +13,9 @@ const NavigationBtn = ({ link, text, size, imgUrl }: BtnProps) => {
     const navigate = useNavigate();
 
     return (
-        <button 
-            className={`w-${size || '10'} h-${size || '10'} rounded-full bg-secondary`}
+        <button
+            style={{ width: size ? `${size}px` : '50px', height: size ? `${size}px` : '50px' }}
+            className={`rounded-full bg-secondary`}
             onClick={() => link ? navigate(link) : null}
         >
             {imgUrl ? <img src={imgUrl} alt={text} /> : text}
@@ -23,8 +24,9 @@ const NavigationBtn = ({ link, text, size, imgUrl }: BtnProps) => {
 }
 
 const ActionBtn = ({ text, onClick, size, imgUrl }: BtnProps) => (
-    <button 
-        className={`w-${size || '10'} h-${size || '10'} rounded-full bg-secondary`}
+    <button
+        style={{ width: size ? `${size}px` : '50px', height: size ? `${size}px` : '50px' }}
+        className={`rounded-full bg-secondary`}
         onClick={onClick}
     >
         {imgUrl ? <img src={imgUrl} alt={text} /> : text}

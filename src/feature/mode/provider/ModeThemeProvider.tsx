@@ -9,10 +9,11 @@ const ModeThemeProvider = ({ children } : { children: React.ReactNode }) => {
     const [theme, setTheme] = useState<string | null>(null);
 
     useEffect(() => {
-        const storedTheme = localStorage.getItem('theme');
-        if (storedTheme) {
+        const storedTheme = localStorage.getItem('myTheme');
+        if (!storedTheme)
+            applyTheme('light');
+        else
             applyTheme(JSON.parse(storedTheme));
-        }
     }, []);
 
     const applyTheme = (mode: string) => {
@@ -25,7 +26,7 @@ const ModeThemeProvider = ({ children } : { children: React.ReactNode }) => {
         }
 
         setTheme(mode);
-        localStorage.setItem('theme', JSON.stringify(mode));
+        localStorage.setItem('myTheme', JSON.stringify(mode));
     };
 
     const toggleModeTheme = () => {

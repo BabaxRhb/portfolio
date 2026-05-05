@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Container from "../components/ui/Container";
-import CustomText from "../components/Text";
+import CustomText from "../components/CustomText";
 
 const Home = () => {
     const [ t ] = useTranslation("global");

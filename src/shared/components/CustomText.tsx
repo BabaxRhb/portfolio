@@ -9,7 +9,7 @@ interface TextProps {
 const CustomText = ({ variant, children, textColor }: TextProps) => {
 
     const textColorClass = textColor ? `text-${textColor}` : 'text-text';
-    const defaultStyle = 'text-center';
+    const defaultStyle = 'text-justify';
 
     switch (variant) {
         case 'h1':

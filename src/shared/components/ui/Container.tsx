@@ -29,11 +29,14 @@ const Container = ({
 		<div
 			style={gapStyle}
 			className={`${defaultSetting} ${flexDirection} ${backGroundColor}`}>
-			{childrenArray.map((item, index) => (
-				<div key={index} className={`${childDefaultSetting}`}>
-					{item}
-				</div>
-			))}
+			{childrenArray.map((item, index) => {
+				return (
+					<div key={index} className={`${childDefaultSetting}`}>
+						{item}
+					</div>
+					)
+				}
+			)}
 		</div>
 	)
 }

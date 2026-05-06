@@ -27,4 +27,12 @@ const CustomText = ({ variant, children, textColor }: TextProps) => {
     }
 }
 
+export const BorderedText = ({ variant, children, textColor }: TextProps) => {
+    return (
+        <div className="border-b-1 border-primary w-full">
+            <CustomText variant={variant} textColor={textColor}>{children}</CustomText>
+        </div>
+    )
+}
+
 export default CustomText;

@@ -1,9 +1,9 @@
-interface BtnProps {
+interface LinkBtnProps {
 	link: string;
 	text: string;
 }
 
-const LinkBtn = ({ link, text }: BtnProps) => {
+const LinkBtn = ({ link, text }: LinkBtnProps) => {
 
 	return (
 		<a href={link} type="button">

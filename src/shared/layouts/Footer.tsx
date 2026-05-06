@@ -12,8 +12,13 @@ const Footer = () => {
 	return (
 		<Container spacing={10}>
 			{
-				footerLinkArray.map((footerLink) => (
-					<LinkBtn link={footerLink.link} text={footerLink.text}></LinkBtn>
+				footerLinkArray.map((footerLink, index) => (
+					<div key={index}>
+						<LinkBtn
+							link={footerLink.link}
+							text={footerLink.text}
+						/>
+					</div>
 				))
 			}
 		</Container>

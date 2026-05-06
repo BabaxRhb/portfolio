@@ -12,5 +12,13 @@
             "Alongside IT, I’ve always loved art : drawing, painting, sculpting, and later UI/UX design.\n\nFrontend development felt natural to me: it’s like drawing with code. Since functionality matters as much as aesthetics, I’m also actively developing my Backend skills.",
             "Today, I’m a Fullstack Junior Developer who enjoys creating creative, efficient solutions for people who, like I once did, are tired of repetitive work and want tools that genuinely improve their daily lives."
         ]
+    },
+
+    "skill": {
+        "title": {
+            "web" : "Web developement",
+            "IT" : "IT",
+            "design" : "Design"
+        }
     }
 }

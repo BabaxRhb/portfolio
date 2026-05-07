@@ -14,6 +14,14 @@ const Skill = () => {
         "React.js", "SQL"
     ]
 
+    const ITSkill = [
+        "C", "C++", "Shell", "Docker", "Unity"
+    ]
+
+    const designSkill = [
+        "Adobe Photoshop", "Adobe Illustrator", "Figma", "Canva"
+    ]
+
     return (
         <div>
             <div>
@@ -27,8 +35,21 @@ const Skill = () => {
                 </Container>
             </div>
             <BorderedText variant={"h3"}>{borderedTitle[1]}</BorderedText>
+            <Container spacing={2}>
+                {
+                    ITSkill.map((item, index) => (
+                        <div key={index}><SkillUI text={item} /></div>
+                    ))
+                }
+            </Container>
             <BorderedText variant={"h3"}>{borderedTitle[2]}</BorderedText>
-
+            <Container spacing={2}>
+                {
+                    designSkill.map((item, index) => (
+                        <div key={index}><SkillUI text={item} /></div>
+                    ))
+                }
+            </Container>
         </div>
     )
 }

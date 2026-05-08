@@ -19,22 +19,30 @@
  --color-text: var(--text);
  --color-background: var(--background);
  --color-primary: var(--primary);
+ --color-primary-light: var(--primary-light);
+ --color-primary-dark: var(--primary-dark);
  --color-secondary: var(--secondary);
+ --color-secondary-light: var(--secondary-light);
+ --color-secondary-dark: var(--secondary-dark);
  --color-accent: var(--accent)
 };
 
 :root {
-    --background: #F7FBFD;
-    --text: #0A1A33;
-    --primary: #1B3F65;
-    --secondary: #B1CEE7;
-    --accent: #497EA7;
+  --background: #F7FBFD;
+  --text: #0A1A33;
+  --primary: #1B3F65;
+  --primary-light: #2d71b9;
+  --primary-dark: #122942;
+  --secondary: #B1CEE7;
+  --secondary-light: #c1e2ff;
+  --secondary-dark: #1a1e22;
+  --accent: #497EA7;
 }
 
 .dark {
-    --background: #020608;
-    --text: #ccdcf5;
-    --primary: #9abee4;
-    --secondary: #18354e;
-    --accent: #588db6;
+  --background: #020608;
+  --text: #ccdcf5;
+  --primary: #9abee4;
+  --secondary: #18354e;
+  --accent: #588db6;
 }

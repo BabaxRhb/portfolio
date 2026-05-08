@@ -20,5 +20,16 @@
             "IT" : "IT",
             "design" : "Design"
         }
+    },
+
+    "project" : {
+        "42": {
+            "title" : "42 Projects",
+            "description": "Projects I've done during my study"
+        },
+        "personnal": {
+            "title" : "Personnal Projects",
+            "description": "Ongoing projects"
+        }
     }
 }

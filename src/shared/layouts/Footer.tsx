@@ -1,5 +1,5 @@
-import Container from "../components/ui/Container";
-import LinkBtn from "../components/ui/LinkBtn";
+import Container from "../components/container/Container";
+import LinkBtn from "../components/ui/button/LinkBtn";
 
 const Footer = () => {
 

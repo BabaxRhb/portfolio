@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Container from "../components/ui/Container";
+import Container from "../components/container/Container";
 import CustomText from "../components/typography/CustomText";
 
 const Home = () => {

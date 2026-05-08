@@ -1,4 +1,4 @@
-import { ActionBtn } from "../../../shared/components/ui/Btn"
+import { ActionBtn } from "../../../shared/components/ui/button/Btn"
 import { useModeTheme } from "../provider/ModeThemeProvider";
 
 const SwitchModeThemeBtn = () => {

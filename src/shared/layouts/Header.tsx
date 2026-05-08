@@ -1,8 +1,8 @@
 import SwitchLangBtn from "../../feature/language/component/SwitchLangBtn";
 import SwitchModeThemeBtn from "../../feature/mode/component/SwitchModeThemeBtn";
 import Navbar from "../components/Navbar";
-import { NavigationBtn } from "../components/ui/Btn";
-import Container from "../components/ui/Container";
+import { NavigationBtn } from "../components/ui/button/Btn";
+import Container from "../components/container/Container";
 
 
 const Header = () => {

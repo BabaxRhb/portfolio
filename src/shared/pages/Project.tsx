@@ -1,29 +1,46 @@
 import { useTranslation } from "react-i18next";
-import Container from "../components/container/Container";
-import ProjectDivider from "../components/ProjectDivider";
+import { BorderedText } from "../components/typography/CustomText";
+import ProjectCard from "../components/ui/ProjectCard";
 
 const Project = () => {
 
-    const [ t ] = useTranslation("global");
+	const [ t ] = useTranslation("global");
 
-    const projectTheme = [
-        { title : t("project.42.title"), content : t("project.42.description") },
-        { title : t("project.personnal.title"), content : t("project.personnal.description") }
-    ]
+	const firstProject = {
+		context : t("project.42.title"),
+		projectList : [
+			{ 
+				title : 'LIKEO',
+				content: 'This is a social media app',
+				imgUrl: "",
+				techno : ['React.js', 'Fastify', 'PostgreSQL', 'Prisma']
+			},
+			{ 
+				title : 'WEBSERV',
+				content: 'This is a web server',
+				imgUrl: "project/webserv/webserv.webm",
+				techno : ['C++']
+			}
+		]
+	}
 
-    return (
-        <div>
-            <Container direction="row">
-                {
-                    projectTheme.map((item, index) => (
-                        <div key={index}>
-                            <ProjectDivider title={item.title} content={item.content} />
-                        </div>
-                    ))
-                }
-            </Container>
-        </div>
-    )
+	const persoProject = {
+		context : t("project.personnal.title"),
+	}
+
+	return (
+		<div>
+			<BorderedText>{firstProject.context}</BorderedText>
+			{
+				firstProject.projectList.map((project, index) => (
+					<div key={index}>
+						<ProjectCard project={project} />
+					</div>
+				))
+			}
+			<BorderedText>{persoProject.context}</BorderedText>
+		</div>
+	)
 }
 
 export default Project;

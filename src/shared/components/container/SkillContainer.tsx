@@ -4,10 +4,11 @@ import Container from "./Container";
 
 interface SkillContainerProps {
     title? : string,
-    skillArray : string[]
+    skillArray : string[],
+    skillTextSize?: string
 }
 
-const SkillContainer = ({ title, skillArray } : SkillContainerProps) => {
+const SkillContainer = ({ title, skillArray, skillTextSize } : SkillContainerProps) => {
     return (
         <div>
             {title && <BorderedText variant={"h3"}>{title}</BorderedText>}
@@ -15,7 +16,7 @@ const SkillContainer = ({ title, skillArray } : SkillContainerProps) => {
             {
                 skillArray.map((item, index) => (
                     <div key={index}>
-                        <SkillUI text={item} />
+                        <SkillUI text={item} textSize={skillTextSize}/>
                     </div>
                 ))
             }

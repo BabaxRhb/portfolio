@@ -11,13 +11,13 @@ const Project = () => {
 		projectList : [
 			{ 
 				title : 'LIKEO',
-				content: 'This is a social media app',
-				imgUrl: "",
+				content: 'Social media app',
+				imgUrl: "project/likeo/likeo1.png",
 				techno : ['React.js', 'Fastify', 'PostgreSQL', 'Prisma']
 			},
 			{ 
 				title : 'WEBSERV',
-				content: 'This is a web server',
+				content: 'Web server from scratch',
 				imgUrl: "project/webserv/webserv.webm",
 				techno : ['C++']
 			}
@@ -26,19 +26,38 @@ const Project = () => {
 
 	const persoProject = {
 		context : t("project.personnal.title"),
+		projectList : [
+			{ 
+				title : 'PERIODIC TABLE',
+				content: 'A fun and interactive way to learn chemistry',
+				techno : ['React.js']
+			},
+			{ 
+				title : 'LET\'S VOTE',
+				content: 'A voting and polling API',
+				techno : ['SQLite, Node.js']
+			}
+		]
 	}
 
 	return (
-		<div>
-			<BorderedText>{firstProject.context}</BorderedText>
+		<div className="flex flex-col gap-10">
+			<BorderedText variant="h3">{firstProject.context}</BorderedText>
 			{
 				firstProject.projectList.map((project, index) => (
-					<div key={index}>
+					<div key={`first-${index}`} className="flex justify-center">
 						<ProjectCard project={project} />
 					</div>
 				))
 			}
-			<BorderedText>{persoProject.context}</BorderedText>
+			<BorderedText variant="h3">{persoProject.context}</BorderedText>
+			{
+				persoProject.projectList.map((project, index) => (
+					<div key={`second-${index}`} className="flex justify-center">
+						<ProjectCard project={project} />
+					</div>
+				))
+			}
 		</div>
 	)
 }

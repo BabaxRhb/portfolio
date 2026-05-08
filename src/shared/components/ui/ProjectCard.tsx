@@ -1,3 +1,4 @@
+import Container from "../container/Container";
 import SkillContainer from "../container/SkillContainer";
 import CustomText from "../typography/CustomText";
 
@@ -15,16 +16,16 @@ const ProjectCard = ( {project} : ProjectCardProps) => {
 	const { title, content, imgUrl, techno } = project;
 
 	return (
-		<div className="flex flex-row gap-5">
+		<div className="flex flex-row border-solid border-secondary border rounded-md justify-center w-3/4 p-5">
 			<img 
 				src={imgUrl}
-				className="w-[150px] h-[150px]"
+				className="max-w-[250px] min-w-[100px] h-[150px]"
 			/>
-			<div>
-				<CustomText variant="h4">{title}</CustomText>
+			<Container direction="column">
+				<CustomText variant="h4" textWeight="bold">{title}</CustomText>
 				<CustomText>{content}</CustomText>
-				<SkillContainer skillArray={techno} />
-			</div>
+				<SkillContainer skillArray={techno} skillTextSize="xs"/>
+			</Container>
 		</div>
 	)
 }

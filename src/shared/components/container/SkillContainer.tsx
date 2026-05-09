@@ -12,7 +12,7 @@ const SkillContainer = ({ title, skillArray, skillTextSize } : SkillContainerPro
     return (
         <div>
             {title && <BorderedText variant={"h3"}>{title}</BorderedText>}
-            <Container spacing={2}>
+            <Container spacing={2} bgColor="inherit">
             {
                 skillArray.map((item, index) => (
                     <div key={index}>

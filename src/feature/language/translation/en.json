@@ -23,13 +23,25 @@
     },
 
     "project" : {
+        "ongoing" : "Project on going",
         "42": {
             "title" : "42 Projects",
-            "description": "Projects I've done during my study"
+            "description": "Projects I've done during my study",
+            "projectList" : {
+                "likeo" : "A social media app",
+                "webserv" : "A web server from scratch",
+                "inception" : "Dockerization for Wordpress",
+                "cub3D" : "Real-time raycasting rendering",
+                "minishell" : "Shell UNIX with basics functionnality"
+            }
         },
         "personnal": {
             "title" : "Personnal Projects",
-            "description": "Ongoing projects"
+            "description": "Ongoing projects",
+            "projectList" : {
+                "periodic-table" : "Fun and interactive way to learn chemistry",
+                "vote" : "A voting and polling API"
+            }
         }
     }
 }

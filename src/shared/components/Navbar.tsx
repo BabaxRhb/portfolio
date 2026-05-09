@@ -1,23 +1,33 @@
+import { Link, useLocation } from "react-router-dom";
+
+const navbarItems = [
+  { title: "About", link: "/about" },
+  { title: "Skills", link: "/skills" },
+  { title: "Projects", link: "/projects" },
+];
+
 const Navbar = () => {
+	const { pathname } = useLocation();
 
-    const  navbarArray : {
-        title : string,
-        link : string
-    }[] = [
-        {title: 'About', link: "/about"},
-        {title: 'Skills', link: "/skills"},
-        {title: 'Projects', link: "/projects"},
-    ]
+	const baseStyle = "max-sm:text-lg text-2xl font-bold mx-5 hover:scale-105";
 
-    return (
-        <nav className="flex flex-row items-center w-full">
-            { navbarArray.map((item, index) => (
-                <div key={index} className="mx-5">
-                    <a href={item.link} className="text-text max-sm:text-lg text-2xl font-bold">{item.title}</a>
-                </div>
-            ))}
-        </nav>
-    )
-}
+	return (
+	  <nav className="flex items-center w-full">
+		{navbarItems.map((item) => {
+
+		  const isActive = pathname === item.link;
+  
+		  return (
+			<Link 
+				key={item.link} to={item.link}
+				className={` ${baseStyle} ${ isActive ? "text-text" : "text-text-disabled"}`}
+			>
+			  {item.title}
+			</Link>
+		  );
+		})}
+	  </nav>
+	);
+};
 
 export default Navbar;

@@ -13,6 +13,7 @@ const textColors = {
     accent: 'text-accent',
     text: 'text-text',
     red: 'text-red-500',
+    textDisabled: 'text-disabled'
 };
 
 const textWeights = {

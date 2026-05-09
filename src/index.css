@@ -17,13 +17,20 @@
   --font-sans: "Noto Sans Lao", sans-serif;
 
   --color-text: var(--text);
+  --color-text-disabled: var(--text-disabled);
+
   --color-background: var(--background);
+  
+  --color-disabled: var(--disabled);
+
   --color-primary: var(--primary);
   --color-primary-light: var(--primary-light);
   --color-primary-dark: var(--primary-dark);
+
   --color-secondary: var(--secondary);
   --color-secondary-light: var(--secondary-light);
   --color-secondary-dark: var(--secondary-dark);
+
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
   --color-accent-dark: var(--accent-dark);
@@ -31,7 +38,12 @@
 
 :root {
   --background: #F7FBFD;
+
   --text: #0A1A33;
+  --text-disabled: #8A96A3;
+
+  --disabled: #D6DCE3;
+
   --primary: #1B3F65;
   --primary-light: #255382;
   --primary-dark: #14314F;
@@ -48,6 +60,9 @@
 .dark {
   --background: #020608;
   --text: #CCDCF5;
+  --text-disabled: #7E8A96;
+
+  --disabled: #2A3440;
 
   --primary: #9ABEE4;
   --primary-light: #AED0F3;

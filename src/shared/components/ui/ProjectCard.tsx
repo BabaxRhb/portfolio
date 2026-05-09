@@ -20,14 +20,15 @@ const ProjectCard = ( {project} : ProjectCardProps) => {
 	const { title, content, imgUrl, techno, status } = project;
 
 	return (
-		<div className="
-			flex flex-row
-			border-solid border-secondary border rounded-md
-			justify-center
-			w-3/4
-			p-5
-			bg-inherit
-			hover:scale-110
+		<div 
+			className="
+				flex flex-row
+				border-solid border-secondary border rounded-md
+				justify-center
+				w-3/4
+				p-5
+				bg-inherit
+				hover:scale-110
 		">
 			{
 				status ? 

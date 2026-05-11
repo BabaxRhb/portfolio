@@ -13,7 +13,7 @@ const Footer = () => {
 		<Container spacing={10}>
 			{
 				footerLinkArray.map((footerLink, index) => (
-					<div key={index}>
+					<div key={index} className="hover:scale-105 transition-all">
 						<LinkBtn
 							link={footerLink.link}
 							text={footerLink.text}

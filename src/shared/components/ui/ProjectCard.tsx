@@ -29,6 +29,7 @@ const ProjectCard = ( {project} : ProjectCardProps) => {
 				p-5
 				bg-inherit
 				hover:scale-110
+				transition-all
 		">
 			{
 				status ? 

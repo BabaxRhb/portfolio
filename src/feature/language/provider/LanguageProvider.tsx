@@ -11,15 +11,19 @@ import type { ChildrenProps } from "../../../shared/data/type";
 i18next
 	.use(LanguageDetector)
 	.init({
-		lng: "en",
-		// debug: true,
-		resources: {
-			en: { global: global_en },
-			fr: { global: global_fr },
-			mg: { global: global_mg }
-		},
+	interpolation: { escapeValue: false },
 	fallbackLng: "en",
-})
+	load: "languageOnly",
+	resources: {
+		en: { global: global_en },
+		fr: { global: global_fr },
+		mg: { global: global_mg },
+	},
+	detection: {
+		order: ["localStorage", "navigator"],
+		caches: ["localStorage"],
+	},
+});
 
 const LanguageProvider = ({ children } : ChildrenProps) => {
 	return (

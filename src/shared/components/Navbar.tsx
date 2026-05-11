@@ -9,7 +9,7 @@ const navbarItems = [
 const Navbar = () => {
 	const { pathname } = useLocation();
 
-	const baseStyle = "max-sm:text-lg text-2xl font-bold mx-5 hover:scale-105";
+	const baseStyle = "max-sm:text-lg text-2xl font-bold mx-5 hover:scale-105 transition-all";
 
 	return (
 	  <nav className="flex items-center w-full">

@@ -13,12 +13,14 @@ import GeneralLayout from "../layouts/Layout"
 const AppRoute = () => {
     return (
         <Routes>
-            <Route path="/" element={<GeneralLayout><Home /></GeneralLayout>} />
-            <Route path="/home" element={<GeneralLayout><Home /></GeneralLayout>} />
-            <Route path="/about" element={<GeneralLayout><About /></GeneralLayout>} />
-            <Route path="/projects" element={<GeneralLayout><Project /></GeneralLayout>} />
-            <Route path="/skills" element={<GeneralLayout><Skill /></GeneralLayout>} />
-            <Route path="/contact" element={<GeneralLayout><Contact /></GeneralLayout>} />
+            <Route element={<GeneralLayout />}>
+                <Route path='/' element={<Home />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Project />} />
+                <Route path="/skills" element={<Skill />} />
+                <Route path="/contact" element={<Contact />} />
+            </Route>
         </Routes>
     )
 }

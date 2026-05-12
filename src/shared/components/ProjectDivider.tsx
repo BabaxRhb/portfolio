@@ -9,8 +9,8 @@ const ProjectDivider = ({ title, content } : ProjectDividerProps) => {
     return (
         <div
             className="
-                w-[250px]
-                h-[350px]
+                w-62.5
+                h-87.5
                 p-5
                 bg-secondary
                 hover:bg-secondary-light

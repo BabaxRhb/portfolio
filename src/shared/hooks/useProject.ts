@@ -57,7 +57,7 @@ const useProject = () => {
             { 
                 title : 'LET\'S VOTE',
                 content: 'A voting and polling API',
-                techno : ['SQLite, Node.js'],
+                techno : ['MongoDB, Node.js'],
                 status : false
             }
         ]

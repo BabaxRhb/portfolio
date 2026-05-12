@@ -18,7 +18,7 @@ const SkillUI = ({text, textSize = "base"} : SkillUIProps) => {
 	return (
 		<div
 		className={`
-			border-solid border border-primary
+			border-solid border border-secondary
 			rounded-lg
 			p-2
 			text-center

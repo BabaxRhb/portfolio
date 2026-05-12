@@ -1,3 +1,4 @@
+import type { ElementType } from "react";
 import { useNavigate } from "react-router-dom";
 
 interface BtnProps {
@@ -5,6 +6,7 @@ interface BtnProps {
     text?: string;
     size?: number;
     imgUrl?: string;
+    Icon?: ElementType;
     onClick?: () => void;
 }
 
@@ -23,7 +25,7 @@ const NavigationBtn = ({ link, text, size = 50, imgUrl }: BtnProps) => {
     )
 }
 
-const ActionBtn = ({ text, onClick, size = 50, imgUrl }: BtnProps) => {
+const ActionBtn = ({ text, onClick, size = 50, imgUrl, Icon }: BtnProps) => {
 
     let imgSize = size - 20;
     if (imgSize < 0)
@@ -40,11 +42,10 @@ const ActionBtn = ({ text, onClick, size = 50, imgUrl }: BtnProps) => {
                 className="m-auto"
             >
                 {imgUrl ? <img src={imgUrl} alt={text} /> : text}
+                {Icon && <Icon className="w-full h-full stroke-secondary" />}
             </div>
         </button>
     )
 }
-
-
 
 export { NavigationBtn, ActionBtn };

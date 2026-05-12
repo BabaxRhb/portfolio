@@ -14,7 +14,7 @@ const HeaderElement = ({ children } : ChildrenProps) => (
 const Header = () => {
 
     return (
-        <Container spacing={2}>
+        <Container spacing={2} customStyle="backdrop-blur-sm">
             <HeaderElement><NavigationBtn link={'/'} /></HeaderElement>
             <Navbar />
             <Container spacing={2}>

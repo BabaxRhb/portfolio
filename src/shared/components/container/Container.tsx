@@ -5,16 +5,18 @@ interface ContainerProps {
 	bgColor?: string;
 	spacing?: number;
 	direction?: 'row' | 'column';
+	customStyle?: string;
 }
 
 const Container = ({ 
 	children,
 	bgColor,
 	spacing = 1,
-	direction = 'row'
+	direction = 'row',
+	customStyle
 }: ContainerProps) => {
 
-	const defaultSetting = "w-full p-3 flex flex-wrap justify-center items-center";
+	const defaultSetting = "w-full p-3 flex flex-wrap justify-center items-center" + (customStyle ? ` ${customStyle}` : '');
 
 	const flexDirection = direction === 'row' ? 'flex-row' : 'flex-col';
 	const backGroundColor = bgColor ? `bg-${bgColor}` : 'bg-background';

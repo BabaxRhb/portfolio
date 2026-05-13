@@ -5,6 +5,8 @@ import { NavigationBtn } from "../components/ui/button/Btn";
 import Container from "../components/container/Container";
 import type { ChildrenProps } from "../data/type";
 
+import Avatar from "src/assets/avatar.svg?react";
+
 const HeaderElement = ({ children } : ChildrenProps) => (
     <div className="hover:scale-110 transition-all">
         {children}
@@ -15,7 +17,9 @@ const Header = () => {
 
     return (
         <Container spacing={2} customStyle="backdrop-blur-sm">
-            <HeaderElement><NavigationBtn link={'/'} /></HeaderElement>
+                <HeaderElement>
+                    <NavigationBtn link={'/'} Icon={Avatar}/>
+                </HeaderElement>
             <Navbar />
             <Container spacing={2}>
                 <HeaderElement><SwitchLangBtn /></HeaderElement>

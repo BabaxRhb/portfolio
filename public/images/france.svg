@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" id="france">
+  <path d="M336 30.031v451.973A240 240 0 0 0 496 256 240 240 0 0 0 336 30.031z" style="fill:#e32d3c;fill-opacity:1;stroke:none"></path>
+  <path d="M256 16a240 240 0 0 0-80 13.996V481.97A240 240 0 0 0 256 496a240 240 0 0 0 80-13.996V30.03A240 240 0 0 0 256 16z" style="fill:#fff;fill-opacity:1;stroke:none"></path>
+  <path d="M176 29.996A240 240 0 0 0 16 256a240 240 0 0 0 160 225.969V29.996z" style="fill:#2b4896;fill-opacity:1;stroke:none"></path>
+</svg>

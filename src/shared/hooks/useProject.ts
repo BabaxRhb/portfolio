@@ -10,35 +10,35 @@ const useProject = () => {
             { 
                 title : 'LIKEO',
                 content: t("project.42.projectList.likeo"),
-                imgUrl: "project/likeo/likeo1.png",
+                imgUrl: "/project/likeo/likeo1.png",
                 techno : ['React.js', 'Fastify', 'PostgreSQL', 'Prisma'],
                 status : true
             },
             { 
                 title : 'WEBSERV',
                 content: t("project.42.projectList.webserv"),
-                imgUrl: "project/webserv/webserv.webm",
+                imgUrl: "/project/webserv/webserv.webm",
                 techno : ['C++'],
                 status : true
             },
             { 
                 title : 'INCEPTION',
                 content: t("project.42.projectList.inception"),
-                imgUrl: "project/inception/inception1.png",
+                imgUrl: "/project/inception/inception1.png",
                 techno : ['Docker'],
                 status : true
             },
             { 
                 title : 'CUB3D',
                 content: t("project.42.projectList.cub3D"),
-                imgUrl: "project/cub3D/cub1.png",
+                imgUrl: "/project/cub3D/cub1.png",
                 techno : ['C'],
                 status : true
             },
             { 
                 title : 'MINISHELL',
                 content: t("project.42.projectList.minishell"),
-                imgUrl: "project/minishell/minishell1.png",
+                imgUrl: "/project/minishell/minishell1.png",
                 techno : ['C'],
                 status : true
             }

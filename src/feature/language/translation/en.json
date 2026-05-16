@@ -6,6 +6,7 @@
     },
 
     "about": {
+        "title": "About",
         "paragraph": [
             "I’m from Madagascar, where I earned a degree in Chemical Engineering. I took a job in the field of EHS (Environment, Health and Safety) where I quickly grew frustrated with repetitive tasks and manual processes.\n\nI wanted to automate, optimize, and build tools that actually make work easier. That curiosity led me to coding which I learned step by step on my own.",
             "Then a life-changing opportunity appeared : School 42 opened in my country. I made the decision to fully commit in learning computer science and software development.",
@@ -15,7 +16,8 @@
     },
 
     "skill": {
-        "title": {
+        "title": "Skill",
+        "subtitle": {
             "web" : "Web developement",
             "IT" : "IT",
             "design" : "Design"
@@ -23,9 +25,11 @@
     },
 
     "project" : {
+        "title": "Project",
         "ongoing" : "Project on going",
         "42": {
             "title" : "42 Projects",
+            "acro": "42",
             "description": "Projects I've done during my study",
             "projectList" : {
                 "likeo" : "A social media app",
@@ -37,6 +41,7 @@
         },
         "personnal": {
             "title" : "Personnal Projects",
+            "acro" : "Personnal",
             "description": "Ongoing projects",
             "projectList" : {
                 "periodic-table" : "Fun and interactive way to learn chemistry",

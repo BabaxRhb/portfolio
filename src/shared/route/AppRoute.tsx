@@ -1,14 +1,12 @@
-import { Route, Routes } from "react-router-dom"
+import { Navigate, Route, Routes } from "react-router-dom"
 
 import Home from "../pages/Home"
 import About from "../pages/About"
 import Skill from "../pages/Skill"
-import Contact from "../pages/Contact"
-import Project from "../pages/Project"
 
 import GeneralLayout from "../layouts/Layout"
-
-
+import Project42 from "../pages/Project/Project42"
+import ProjectPersonnal from "../pages/Project/ProjectPersonnal"
 
 const AppRoute = () => {
     return (
@@ -17,9 +15,12 @@ const AppRoute = () => {
                 <Route path='/' element={<Home />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<Project />} />
+                <Route path="/projects">
+                    <Route index element={<Navigate to="42" replace />} />
+                    <Route path="42" element={<Project42 />} />
+                    <Route path="personnal" element={<ProjectPersonnal />} />
+                </Route>
                 <Route path="/skills" element={<Skill />} />
-                <Route path="/contact" element={<Contact />} />
             </Route>
         </Routes>
     )

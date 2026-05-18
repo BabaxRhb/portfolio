@@ -35,6 +35,11 @@
   --color-accent-light: var(--accent-light);
   --color-accent-dark: var(--accent-dark);
 
+  --breakpoint-*: initial;
+  --breakpoint-phone: 32rem;
+  --breakpoint-tablet: 40rem;
+  --breakpoint-laptop: 64rem;
+  --breakpoint-desktop: 80rem;
 };
 
 :root {

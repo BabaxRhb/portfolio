@@ -32,7 +32,7 @@ const CustomText = ({ variant = 'def', children, textColor, textWeight }: TextPr
 
     const textColorClass = textColors[textColor as keyof typeof textColors] || 'text-text';
     const textWeightClass = textWeights[textWeight as keyof typeof textWeight] || 'text-normal';
-    const defaultStyle = 'text-justify';
+    const defaultStyle = 'text-center';
 
     switch (variant) {
         case 'h1':
@@ -52,7 +52,7 @@ const CustomText = ({ variant = 'def', children, textColor, textWeight }: TextPr
 
 export const BorderedText = ({ variant, children, textColor }: TextProps) => {
     return (
-        <div className="border-b-1 border-secondary w-full">
+        <div className="border-b border-secondary w-full">
             <CustomText variant={variant} textColor={textColor}>{children}</CustomText>
         </div>
     )

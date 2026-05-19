@@ -1,7 +1,17 @@
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
+import Menu from "src/assets/menu.svg?react";
+import { ActionBtn } from "./ui/button/Btn";
 
 /** TO DO : Work on the project menu and responsivity */
+
+const MobileNavBar = () => {
+	return (
+		<div>
+			<ActionBtn Icon={Menu}/>
+		</div>
+	)
+}
 
 const Navbar = () => {
 	const [ t ] = useTranslation("global");
@@ -18,11 +28,12 @@ const Navbar = () => {
 
 	return (
 	  <nav className="flex items-center w-full">
-		<div className="flex flex-row">
+		<div className="flex flex-row content-center">
+			<MobileNavBar />
 			<div>
 				{navbarItems.map((item) => {
 				const isActive = pathname === item.link;
-		
+
 				return (
 					<Link 
 						key={item.link} to={item.link}
@@ -37,7 +48,6 @@ const Navbar = () => {
 				onClick={() => console.log("Clicked")}
 				className={` ${baseStyle} ${ pathname === projectPath[0] || pathname == projectPath[1] ? "text-text" : "text-text-disabled"}`}
 			>{t("project.title")}</div>
-			<div></div>
 		</div>
 	  </nav>
 	);

@@ -6,6 +6,7 @@ interface ContainerProps {
 	spacing?: number;
 	direction?: 'row' | 'column';
 	customStyle?: string;
+	position?: string;
 }
 
 const Container = ({ 
@@ -13,10 +14,11 @@ const Container = ({
 	bgColor,
 	spacing = 1,
 	direction = 'row',
-	customStyle
+	customStyle,
+	position
 }: ContainerProps) => {
 
-	const defaultSetting = "w-full p-3 flex flex-wrap justify-center items-center" + (customStyle ? ` ${customStyle}` : '');
+	const defaultSetting = "w-full p-3 flex flex-wrap justify-center items-center" + (customStyle ? ` ${customStyle}` : '') + (position ? `${position}` : ``);
 
 	const flexDirection = direction === 'row' ? 'flex-row' : 'flex-col';
 	const backGroundColor = bgColor ? `bg-${bgColor}` : 'bg-background';

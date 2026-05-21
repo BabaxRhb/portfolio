@@ -7,6 +7,7 @@ import Skill from "../pages/Skill"
 import GeneralLayout from "../layouts/Layout"
 import Project42 from "../pages/Project/Project42"
 import ProjectPersonnal from "../pages/Project/ProjectPersonnal"
+import ProjectsLayout from "../pages/Project/Project"
 
 const AppRoute = () => {
     return (
@@ -15,12 +16,12 @@ const AppRoute = () => {
                 <Route path='/' element={<Home />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/projects">
+                <Route path="/skills" element={<Skill />} />
+                <Route path="/projects" element={<ProjectsLayout />}>
                     <Route index element={<Navigate to="42" replace />} />
                     <Route path="42" element={<Project42 />} />
                     <Route path="personnal" element={<ProjectPersonnal />} />
                 </Route>
-                <Route path="/skills" element={<Skill />} />
             </Route>
         </Routes>
     )

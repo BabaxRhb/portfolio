@@ -7,7 +7,7 @@ const GeneralLayout = () => {
 			<div className="flex flex-col h-screen min-w-xs">
 				<Header />
 				<main className="flex-1 overflow-y-auto pt-20 pb-20">
-					<div className=" max-desktop:mx-10 tablet:mx-auto tablet:w-1/2">
+					<div className=" max-desktop:mx-10 laptop:mx-auto laptop:w-1/2">
 						<Outlet />
 					</div>
 				</main>

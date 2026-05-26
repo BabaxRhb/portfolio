@@ -9,8 +9,12 @@ const Footer = () => {
 		{ link : "#", text: "Email" },
 	];
 
+	const position = "fixed bottom-0 left-0 right-0";
+
+	const customStyle = `backdrop-blur-lg bg-background/10 z-10`;
+
 	return (
-		<Container spacing={10}>
+		<Container spacing={10} position={position} customStyle={customStyle}>
 			{
 				footerLinkArray.map((footerLink, index) => (
 					<div key={index} className="hover:scale-105 transition-all">

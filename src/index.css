@@ -44,6 +44,7 @@
 
 :root {
   --background: #F7FBFD;
+;
 
   --text: #0A1A33;
   --text-disabled: #8A96A3;
@@ -65,6 +66,7 @@
 
 .dark {
   --background: #020608;
+
   --text: #CCDCF5;
   --text-disabled: #7E8A96;
 

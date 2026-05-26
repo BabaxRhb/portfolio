@@ -56,7 +56,7 @@ const NavMenu = ({ direction} : { direction: string }) => {
 				}>{t("project.title")}</button>
 				{
 					projectClick &&
-						<div className="flex flex-col w-fit phone:absolute phone:top-15 bg-secondary">
+						<div className="flex flex-col w-fit phone:absolute phone:top-15 bg-background/75 backdrop-blur-md p-4 rounded-md shadow-md z-5">
 							<NavigateLinkBtn link={navbarItems[2].link} title={navbarItems[2].title} baseStyle={baseStyle} />
 							<NavigateLinkBtn link={navbarItems[3].link} title={navbarItems[3].title} baseStyle={baseStyle} />
 						</div>
@@ -72,11 +72,11 @@ const Navbar = () => {
 	return (
 		<nav>
 			<NavMenu direction="row"/>
-			<div className="phone:hidden block">
+			<div className="phone:hidden block hover:scale-110 transition-all">
 				<ActionBtn Icon={Menu} onClick={() => { setMenuClick(prev => !prev)}} />
 			</div>
 			{ menuClick &&
-				<div className="absolute top-20 left-0 w-full bg-secondary phone:hidden">
+				<div className="absolute top-20 left-0 w-full p-4 bg-background/75 shadow-md z-5 phone:hidden">
 					<NavMenu direction="column"/>
 				</div>
 			}

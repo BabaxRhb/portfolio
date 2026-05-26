@@ -15,8 +15,12 @@ const HeaderElement = ({ children } : ChildrenProps) => (
 
 const Header = () => {
 
+	const position = "fixed top-0 left-0 right-0";
+
+	const customStyle = `backdrop-blur-lg bg-background/10`;
+
 	return (
-		<Container spacing={2} customStyle="backdrop-blur-sm" position="phone:static absolute">
+		<Container spacing={2} position={position} customStyle={customStyle}>
 			<HeaderElement><NavigationBtn link={'/'} Icon={Avatar}/></HeaderElement>
 			<Navbar />
 			<Container spacing={2}>

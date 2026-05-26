@@ -18,10 +18,10 @@ const Container = ({
 	position
 }: ContainerProps) => {
 
-	const defaultSetting = "w-full p-3 flex flex-wrap justify-center items-center" + (customStyle ? ` ${customStyle}` : '') + (position ? `${position}` : ``);
+	const defaultSetting = "w-full p-3 flex flex-wrap justify-center items-center" + (customStyle ? ` ${customStyle}` : '') + (position ? ` ${position}` : '');
 
 	const flexDirection = direction === 'row' ? 'flex-row' : 'flex-col';
-	const backGroundColor = bgColor ? `bg-${bgColor}` : 'bg-background';
+	const backGroundColor = bgColor ? `bg-${bgColor}` : '';
 
 	const gapStyle = spacing ? { gap: `${spacing * 0.25}rem` } : {};
 

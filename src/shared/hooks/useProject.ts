@@ -1,45 +1,45 @@
 import { useTranslation } from "react-i18next"
+import type { projectType } from "../data/type";
 
 const useProject = () => {
 
     const [ t ] = useTranslation("global");
 
+    const projectsExtracted = t("projects", { returnObjects: true }) as projectType[];
+
+    const link = "/projects/42/";
+
     const schoolProject = {
         context : t("project.42.title"),
         projectList : [
-            { 
-                title : 'LIKEO',
-                content: t("project.42.projectList.likeo"),
+            {
+                ...projectsExtracted[0],
                 imgUrl: "/project/likeo/likeo1.png",
-                techno : ['React.js', 'Fastify', 'PostgreSQL', 'Prisma'],
+                link: link + "likeo",
                 status : true
             },
             { 
-                title : 'WEBSERV',
-                content: t("project.42.projectList.webserv"),
+                ...projectsExtracted[1],
                 imgUrl: "/project/webserv/webserv.webm",
-                techno : ['C++'],
+                link: link + "webserv",
                 status : true
             },
             { 
-                title : 'INCEPTION',
-                content: t("project.42.projectList.inception"),
+                ...projectsExtracted[2],
                 imgUrl: "/project/inception/inception1.png",
-                techno : ['Docker'],
+                link: link + "inception",
                 status : true
             },
             { 
-                title : 'CUB3D',
-                content: t("project.42.projectList.cub3D"),
+                ...projectsExtracted[3],
                 imgUrl: "/project/cub3D/cub1.png",
-                techno : ['C'],
+                link: link + "cub3D",
                 status : true
             },
             { 
-                title : 'MINISHELL',
-                content: t("project.42.projectList.minishell"),
+                ...projectsExtracted[4],
                 imgUrl: "/project/minishell/minishell1.png",
-                techno : ['C'],
+                link: link + "minishell",
                 status : true
             }
         ]

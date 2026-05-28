@@ -8,6 +8,7 @@ import GeneralLayout from "../layouts/Layout"
 import Project42 from "../pages/Project/Project42"
 import ProjectPersonnal from "../pages/Project/ProjectPersonnal"
 import ProjectsLayout from "../pages/Project/Project"
+import ProjectTemplate from "../pages/Project/ProjectTemplate"
 
 const AppRoute = () => {
     return (
@@ -19,7 +20,13 @@ const AppRoute = () => {
                 <Route path="/skills" element={<Skill />} />
                 <Route path="/projects" element={<ProjectsLayout />}>
                     <Route index element={<Navigate to="42" replace />} />
-                    <Route path="42" element={<Project42 />} />
+                    <Route path="42" element={<Project42 />}>
+                        <Route path="likeo" element={<ProjectTemplate />} />
+                        <Route path="webserv" element={<ProjectTemplate />} />
+                        <Route path="inception" element={<ProjectTemplate />} />
+                        <Route path="cub3D" element={<ProjectTemplate />} />
+                        <Route path="minishell" element={<ProjectTemplate />} />
+                    </Route>
                     <Route path="personnal" element={<ProjectPersonnal />} />
                 </Route>
             </Route>

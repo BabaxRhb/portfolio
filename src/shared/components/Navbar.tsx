@@ -46,17 +46,17 @@ const NavMenu = ({ direction} : { direction: string }) => {
 			<NavigateLinkBtn link={navbarItems[1].link} title={navbarItems[1].title} baseStyle={baseStyle} />
 			<div
 				className={`
-					${baseStyle} ${ isProjectsPath ? "text-text" : "text-text-disabled"}
+					${ isProjectsPath ? "text-text" : "text-text-disabled"}
 					flex flex-col
 				`}
 			>
 				<button
-					className="max-phone:text-left"
+					className={`max-phone:text-left ${baseStyle}`}
 					onClick={() => setProjectClick(prev => !prev)
 				}>{t("project.title")}</button>
 				{
 					projectClick &&
-						<div className="flex flex-col w-fit phone:absolute phone:top-15 bg-background/75 backdrop-blur-md p-4 rounded-md shadow-md z-5">
+						<div className="flex flex-col w-fit phone:absolute phone:top-15 bg-background/75 backdrop-blur-md rounded-md">
 							<NavigateLinkBtn link={navbarItems[2].link} title={navbarItems[2].title} baseStyle={baseStyle} />
 							<NavigateLinkBtn link={navbarItems[3].link} title={navbarItems[3].title} baseStyle={baseStyle} />
 						</div>
@@ -76,7 +76,7 @@ const Navbar = () => {
 				<ActionBtn Icon={Menu} onClick={() => { setMenuClick(prev => !prev)}} />
 			</div>
 			{ menuClick &&
-				<div className="absolute top-20 left-0 w-full p-4 bg-background/75 shadow-md z-5 phone:hidden">
+				<div className="absolute top-15 left-0 w-full p-4 bg-background/75 shadow-md z-5 phone:hidden">
 					<NavMenu direction="column"/>
 				</div>
 			}

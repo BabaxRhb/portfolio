@@ -10,7 +10,9 @@ const SwitchModeThemeBtn = () => {
 
     const Icon = theme === 'dark' ? DarkModeIcon : LightModeIcon;
 
-    return <ActionBtn onClick={toggleModeTheme} Icon={Icon} />
+    const size = theme === 'dark' ? 35 : 45;
+
+    return <ActionBtn onClick={toggleModeTheme} Icon={Icon} size={size} />
 }
 
 export default SwitchModeThemeBtn;

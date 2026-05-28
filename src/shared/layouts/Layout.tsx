@@ -6,7 +6,16 @@ const GeneralLayout = () => {
 		return (
 			<div className="flex flex-col h-screen min-w-xs">
 				<Header />
-				<main className="flex-1 overflow-y-auto pt-20 pb-20">
+				<main className="
+					flex-1 overflow-y-auto pt-30 pb-20
+					[&::-webkit-scrollbar]:w-2
+					[&::-webkit-scrollbar-track]:rounded-full
+					[&::-webkit-scrollbar-thumb]:rounded-full
+					[&::-webkit-scrollbar-track]:bg-background
+					[&::-webkit-scrollbar-thumb]:bg-accent/50
+					dark:[&::-webkit-scrollbar-track]:bg-background
+					dark:[&::-webkit-scrollbar-thumb]:bg-accent/50
+				">
 					<div className=" max-desktop:mx-10 laptop:mx-auto laptop:w-1/2">
 						<Outlet />
 					</div>

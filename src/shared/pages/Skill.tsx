@@ -24,7 +24,7 @@ const Skill = () => {
 		<div>
 			{
 				skills.map(( item, index ) => (
-					<div key={index}>
+					<div key={index} className="mb-10">
 						<SkillContainer
 							title={item.title}
 							skillArray={item.skills}

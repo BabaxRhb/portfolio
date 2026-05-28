@@ -48,5 +48,52 @@
                 "vote" : "A voting and polling API"
             }
         }
-    }
+    },
+
+    "projects": [
+        {
+            "title": "Likeo",
+            "shortDescription": "A social media app",
+            "description": "Likeo is a social media app that allows users to share their thoughts, photos with friends and followers. It features a user-friendly interface, real-time chat, and a variety of interactive features such as likes.",
+            "techno": ["React", "Node.js", "Express", "MongoDB"],
+            "type": "Group",
+            "contribution": "I was part of the frontend team, implementing the user interface and ensuring a seamless user experience. I collaborated closely with the backend team to integrate APIs and optimize performance on the features : real-time chat, group management, search.",
+            "link": "/likeo"
+        },
+        {
+            "title": "Webserv",
+            "shortDescription": "A web server from scratch",
+            "description": "Webserv is a web server built from scratch using C++ programming language. an HTTP/1.1 web server supporting GET, POST, and DELETE methods, file uploads, PHP CGI, and a file-based configuration system (routing and server settings).",
+            "techno": ["C++"],
+            "type": "Group",
+            "contribution": "I developed some core functionalities such as request parsing, response generation, the CGI (Common Gateway Interface) for dynamic content.",
+            "link": "/webserv"
+        },
+        {
+            "title": "Inception",
+            "shortDescription": "Dockerization for Wordpress",
+            "description": "Inception is a project that involves dockerizing a Wordpress application. It includes setting up a Docker environment, creating Dockerfiles, and configuring the necessary services such as MySQL and phpMyAdmin to run the Wordpress application smoothly.",
+            "techno": ["Docker"],
+            "type": "Individual",
+            "link": "/inception"
+        },
+        {
+            "title": "Cub3D",
+            "shortDescription": "Real-time raycasting rendering",
+            "description": "Cub3D is a real-time raycasting rendering project that creates a 3D environment using a 2D map. It utilizes raycasting techniques to render the scene",
+            "techno": ["C"],
+            "type": "Pair",
+            "contribution": "I worked on the 2D map parsing, and was in charge of the 3D rendering from the calculation made by my partner : sprite rendering, texture mapping, and interactions within the 3D environment.",
+            "link": "/cub3D"
+        },
+        {
+            "title": "Minishell",
+            "shortDescription": "Shell UNIX with basics functionnality",
+            "description": "Minishell is a simple shell implementation that provides basic functionalities such as command execution, input/output redirection, and piping. It is designed to mimic the behavior of a typical Unix shell while being lightweight and efficient.",
+            "techno": ["C"],
+            "type": "Pair",
+            "contribution": "I worked on the input parsing, error handling, signal management and the implementation of built-in cd command.",
+            "link": "/minishell"
+        }
+    ]
 }

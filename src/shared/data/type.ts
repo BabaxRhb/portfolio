@@ -11,7 +11,7 @@ export type projectType = {
     shortDescription: string;
     description: string;
     techno: string[];
-    imgUrl?: string;
+    imgUrl?: string[];
     contribution?: string;
     type?: string;
 }

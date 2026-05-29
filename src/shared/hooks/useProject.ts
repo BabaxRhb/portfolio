@@ -15,31 +15,48 @@ const useProject = () => {
         projectList : [
             {
                 ...schoolProjectList[0],
-                imgUrl: "/project/likeo/likeo1.png",
                 link: rootLink + "42/" + "likeo",
+                imgUrl: [
+                    "/project/likeo/likeo1.png",
+                    "/project/likeo/likeo2.png",
+                    "/project/likeo/likeo3.png",
+                    "/project/likeo/likeo4.png",
+                    "/project/likeo/likeo5.png",
+                ],
                 status : true
             },
             { 
                 ...schoolProjectList[1],
-                imgUrl: "/project/webserv/webserv.webm",
                 link: rootLink + "42/" + "webserv",
+                imgUrl: [
+                    "/project/webserv/webserv.webm"
+                ],
                 status : true
             },
             { 
                 ...schoolProjectList[2],
-                imgUrl: "/project/inception/inception1.png",
                 link: rootLink + "42/" + "inception",
+                imgUrl: [
+                    "/project/inception/inception1.png"
+                ],
                 status : true
             },
             { 
                 ...schoolProjectList[3],
-                imgUrl: "/project/cub3D/cub1.png",
+                imgUrl: [
+                    "/project/cub3D/cub1.png",
+                    "/project/cub3D/cub2.png",
+                    "/project/cub3D/cub3d.webm",
+                ],
                 link: rootLink + "42/" + "cub3D",
                 status : true
             },
             { 
                 ...schoolProjectList[4],
-                imgUrl: "/project/minishell/minishell1.png",
+                imgUrl: [
+                    "/project/minishell/minishell1.png",
+                    "/project/minishell/minishell2.png"
+                ],
                 link: rootLink + "42/" + "minishell",
                 status : true
             }
@@ -52,12 +69,18 @@ const useProject = () => {
             { 
                 ...personnalProjectList[0],
                 link: rootLink + "personal/" + "periodicTable",
+                imgUrl: [
+                    "/project/periodicTable/periodicTable1.png",
+                ],
                 status : false
             },
             { 
                 ...personnalProjectList[1],
                 link: rootLink + "personal/" + "voteApi",
                 techno : ['MongoDB, Node.js'],
+                imgUrl: [
+                    "/project/voteApi/voteApi1.png"
+                ],
                 status : false
             }
         ]

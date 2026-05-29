@@ -4,6 +4,7 @@ import CustomText, { BorderedText } from "../../components/typography/CustomText
 import SkillContainer from "../../components/container/SkillContainer";
 import Container from "../../components/container/Container";
 import { useTranslation } from "react-i18next";
+import Carousel from "../../components/container/Carousel";
 
 const ProjectTemplate = () => {
 
@@ -13,7 +14,9 @@ const ProjectTemplate = () => {
 
 	if (!project) return <Navigate to="/projects" replace />;
 
-	const { title, description, techno, type } = project;
+	const { title, description, techno, type, imgUrl } = project;
+
+	console.log(imgUrl);
 
 	return (
 		<Container  direction="column" spacing={10}>
@@ -24,6 +27,7 @@ const ProjectTemplate = () => {
 			<Container direction="column" spacing={2}>
 				<BorderedText variant="h2">{t("project.subtitle.description")}</BorderedText>
 				<CustomText>{description}</CustomText>
+				<Carousel imgUrl={imgUrl ? imgUrl : []}/>
 			</Container>
 			<Container direction="column" spacing={2}>
 				<BorderedText variant="h2">{t("project.subtitle.techno")}</BorderedText>

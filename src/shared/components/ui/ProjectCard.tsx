@@ -44,7 +44,7 @@ const ProjectCard = ( { project, rootLink } : ProjectCardProps) => {
 		>
 			{
 				status ? 
-				<img src={imgUrl} className="max-w-50 min-w-25 h-50 tablet:block hidden"/>
+				<img src={imgUrl ? imgUrl[0] : ""} className="max-w-50 min-w-25 h-50 tablet:block hidden"/>
 				: null
 			}
 			<Container direction="column" bgColor="inherit">

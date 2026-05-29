@@ -1,24 +1,44 @@
-import { useOutletContext } from "react-router-dom";
-import type { projectType } from "../../data/type";
+import { Navigate } from "react-router-dom";
+import { useSelectedProject } from "../../providers/ProjectProvider";
+import CustomText, { BorderedText } from "../../components/typography/CustomText";
+import SkillContainer from "../../components/container/SkillContainer";
+import Container from "../../components/container/Container";
+import { useTranslation } from "react-i18next";
 
 const ProjectTemplate = () => {
 
-    const context = useOutletContext<projectType | null>();
+	const { selectedProject : project } = useSelectedProject();
 
-    console.log(context);
+	const [ t ] = useTranslation("global");
 
-    return (
-        <div>
-            {context ? (
-                <div>
-                    <h2>{context.title}</h2>
-                    <p>{context.description}</p>
-                </div>
-            ) : (
-                <p>No project selected</p>
-            )}
-        </div>
-    )
+	if (!project) return <Navigate to="/projects" replace />;
+
+	const { title, description, techno, type } = project;
+
+	return (
+		<Container  direction="column" spacing={10}>
+			<Container direction="column" spacing={2}>
+				<CustomText variant="h1" textWeight="bold">{title}</CustomText>
+				<CustomText variant="p" textWeight="light">{type + " Project"}</CustomText>
+			</Container>
+			<Container direction="column" spacing={2}>
+				<BorderedText variant="h2">{t("project.subtitle.description")}</BorderedText>
+				<CustomText>{description}</CustomText>
+			</Container>
+			<Container direction="column" spacing={2}>
+				<BorderedText variant="h2">{t("project.subtitle.techno")}</BorderedText>
+				<SkillContainer skillArray={techno}/>
+			</Container>
+			{
+				project.contribution &&
+				<Container direction="column" spacing={2}>
+					<BorderedText variant="h2">{t("project.subtitle.contribution")}</BorderedText>
+					<CustomText>{project.contribution}</CustomText>
+				</Container>
+			}
+
+		</Container>
+	)
 }
 
 export default ProjectTemplate;

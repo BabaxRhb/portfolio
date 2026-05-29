@@ -33,7 +33,7 @@ const NavMenu = ({ direction} : { direction: string }) => {
 	  { title: t("about.title"),link: "/about" },
 	  { title: t("skill.title"), link: "/skills" },
 	  { title: t("project.42.acro"), link: "/projects/42"},
-	  { title: t("project.personnal.acro"), link: "/projects/personnal"}
+	  { title: t("project.personal.acro"), link: "/projects/personnal"}
 	];
 
 	const directionClass = direction === "row" ? "phone:flex-row max-phone:hidden" : "flex-col";

@@ -36,7 +36,7 @@ const CustomText = ({ variant = 'def', children, textColor, textWeight }: TextPr
 
     switch (variant) {
         case 'h1':
-            return <h1 className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-4xl text-text`}>{children}</h1>;
+            return <h1 className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-6xl text-text`}>{children}</h1>;
         case 'h2':
             return <h2 className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-3xl`}>{children}</h2>;
         case 'h3':

@@ -3,7 +3,7 @@ import ProjectCard from "../../components/ui/ProjectCard";
 
 import useProject from "../../hooks/useProject";
 
-const ProjectPersonnal = () => {
+const ProjectPersonal = () => {
 
 	const {persoProject } = useProject();
 
@@ -13,7 +13,7 @@ const ProjectPersonnal = () => {
 			{
 				persoProject.projectList.map((project, index) => (
 					<div key={`second-${index}`} className="flex justify-center">
-						<ProjectCard project={project} />
+						<ProjectCard project={project} rootLink="/projects/personal/" />
 					</div>
 				))
 			}
@@ -21,4 +21,4 @@ const ProjectPersonnal = () => {
 	)
 }
 
-export default ProjectPersonnal;
+export default ProjectPersonal;

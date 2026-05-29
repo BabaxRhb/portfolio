@@ -5,20 +5,22 @@ import CustomText from "../typography/CustomText";
 import { useNavigate } from "react-router-dom";
 
 import  type { projectType } from "../../data/type";
+import { useSelectedProject } from "../../providers/ProjectProvider";
 
 interface ProjectCardProps {
 	project : projectType & {
 		status: boolean
 	}
-	setter: React.Dispatch<React.SetStateAction<projectType | null>>;
+	rootLink: string;
 }
 
-const ProjectCard = ( {project, setter} : ProjectCardProps) => {
+const ProjectCard = ( { project, rootLink } : ProjectCardProps) => {
 
 	const [ t ] = useTranslation("global");
 	const navigate = useNavigate();
+	const { setSelectedProject } = useSelectedProject();
 
-	const { title, shortDescription, imgUrl, techno, status, link } = project;
+	const { title, shortDescription, imgUrl, techno, status } = project;
 
 	return (
 		<div 
@@ -31,15 +33,15 @@ const ProjectCard = ( {project, setter} : ProjectCardProps) => {
 				bg-inherit
 				hover:scale-110
 				transition-all
-		"
+			"
 			onClick={(e) => {
+				const { status, ...projectWithoutStatus } = project;
+				if (status === false) return;
 				e.preventDefault();
-				navigate(link ? link : "/projects/42");
-				const { status, ...projectWithoutStatus } = project
-    			setter(projectWithoutStatus);
+				setSelectedProject(projectWithoutStatus);
+				navigate(rootLink + title);
 			}}
 		>
-			<img src={imgUrl} className="max-w-50 min-w-25 h-50 tablet:block hidden"/>
 			{
 				status ? 
 				<img src={imgUrl} className="max-w-50 min-w-25 h-50 tablet:block hidden"/>
@@ -56,3 +58,4 @@ const ProjectCard = ( {project, setter} : ProjectCardProps) => {
 }
 
 export default ProjectCard;
+

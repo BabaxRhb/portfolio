@@ -5,58 +5,58 @@ const useProject = () => {
 
     const [ t ] = useTranslation("global");
 
-    const projectsExtracted = t("projects", { returnObjects: true }) as projectType[];
+    const schoolProjectList = t("projects.42", { returnObjects: true }) as projectType[];
+    const personnalProjectList = t("projects.personnal", { returnObjects: true }) as projectType[];
 
-    const link = "/projects/42/";
+    const rootLink = "/projects/";
 
     const schoolProject = {
         context : t("project.42.title"),
         projectList : [
             {
-                ...projectsExtracted[0],
+                ...schoolProjectList[0],
                 imgUrl: "/project/likeo/likeo1.png",
-                link: link + "likeo",
+                link: rootLink + "42/" + "likeo",
                 status : true
             },
             { 
-                ...projectsExtracted[1],
+                ...schoolProjectList[1],
                 imgUrl: "/project/webserv/webserv.webm",
-                link: link + "webserv",
+                link: rootLink + "42/" + "webserv",
                 status : true
             },
             { 
-                ...projectsExtracted[2],
+                ...schoolProjectList[2],
                 imgUrl: "/project/inception/inception1.png",
-                link: link + "inception",
+                link: rootLink + "42/" + "inception",
                 status : true
             },
             { 
-                ...projectsExtracted[3],
+                ...schoolProjectList[3],
                 imgUrl: "/project/cub3D/cub1.png",
-                link: link + "cub3D",
+                link: rootLink + "42/" + "cub3D",
                 status : true
             },
             { 
-                ...projectsExtracted[4],
+                ...schoolProjectList[4],
                 imgUrl: "/project/minishell/minishell1.png",
-                link: link + "minishell",
+                link: rootLink + "42/" + "minishell",
                 status : true
             }
         ]
     }
     
     const persoProject = {
-        context : t("project.personnal.title"),
+        context : t("project.personal.title"),
         projectList : [
             { 
-                title : 'PERIODIC TABLE',
-                content: 'A fun and interactive way to learn chemistry',
-                techno : ['React.js'],
+                ...personnalProjectList[0],
+                link: rootLink + "personal/" + "periodicTable",
                 status : false
             },
             { 
-                title : 'LET\'S VOTE',
-                content: 'A voting and polling API',
+                ...personnalProjectList[1],
+                link: rootLink + "personal/" + "voteApi",
                 techno : ['MongoDB, Node.js'],
                 status : false
             }

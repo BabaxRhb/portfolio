@@ -13,6 +13,5 @@ export type projectType = {
     techno: string[];
     imgUrl?: string;
     contribution?: string;
-    link?: string;
     type?: string;
 }

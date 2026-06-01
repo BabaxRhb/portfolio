@@ -52,7 +52,7 @@ const CustomText = ({ variant = 'def', children, textColor, textWeight }: TextPr
 
 export const BorderedText = ({ variant, children, textColor }: TextProps) => {
     return (
-        <div className="border-b border-secondary w-full">
+        <div className={`border-b border-secondary w-full`}>
             <CustomText variant={variant} textColor={textColor}>{children}</CustomText>
         </div>
     )

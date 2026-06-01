@@ -16,15 +16,13 @@ const ProjectTemplate = () => {
 
 	const { title, description, techno, type, imgUrl } = project;
 
-	console.log(imgUrl);
-
 	return (
-		<Container  direction="column" spacing={10}>
+		<Container  direction="column" spacing={8}>
 			<Container direction="column" spacing={2}>
 				<CustomText variant="h1" textWeight="bold">{title}</CustomText>
 				<CustomText variant="p" textWeight="light">{type + " Project"}</CustomText>
 			</Container>
-			<Container direction="column" spacing={2}>
+			<Container direction="column" spacing={5}>
 				<BorderedText variant="h2">{t("project.subtitle.description")}</BorderedText>
 				<CustomText>{description}</CustomText>
 				<Carousel imgUrl={imgUrl ? imgUrl : []}/>

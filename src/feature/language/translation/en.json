@@ -48,7 +48,7 @@
                 "title": "Likeo",
                 "shortDescription": "A social media app",
                 "description": "Likeo is a social media app that allows users to share their thoughts, photos with friends or within their group. It features a user-friendly interface, real-time chat.",
-                "techno": ["React", "Node.js", "Express", "MongoDB"],
+                "techno": ["React", "Node.js", "Express", "PostgreSQL"],
                 "type": "Group",
                 "contribution": "I was part of the frontend team, implementing the user interface and ensuring a seamless user experience. I collaborated closely with the backend team to integrate APIs and optimize performance on the features : real-time chat, group management, search."
             },

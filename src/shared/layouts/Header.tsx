@@ -15,7 +15,7 @@ const HeaderElement = ({ children } : ChildrenProps) => (
 
 const Header = () => {
 
-	const position = "fixed top-0 left-0 right-0 z-10";
+	const position = "fixed z-50";
 
 	const customStyle = `backdrop-blur-lg bg-background/10`;
 

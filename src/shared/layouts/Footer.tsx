@@ -9,7 +9,7 @@ const Footer = () => {
 		{ link : "#", text: "Email" },
 	];
 
-	const position = "fixed bottom-0 left-0 right-0";
+	const position = "fixed bottom-0";
 
 	const customStyle = `backdrop-blur-lg bg-background/10 z-10`;
 

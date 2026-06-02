@@ -1,8 +1,10 @@
-import type React from "react";
+
+import parseMarkdown from "../../utils/textUtils";
 
 interface TextProps {
     variant?: string;
-    children: React.ReactNode;
+    // children: React.ReactNode;
+    children: string;
     textColor?: string;
     textWeight?: string;
 }
@@ -34,19 +36,23 @@ const CustomText = ({ variant = 'def', children, textColor, textWeight }: TextPr
     const textWeightClass = textWeights[textWeight as keyof typeof textWeight] || 'text-normal';
     const defaultStyle = 'text-center';
 
+    const newChildren = parseMarkdown(children);
+
+    console.log("Parsed text:", newChildren);
+
     switch (variant) {
         case 'h1':
-            return <h1 className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-6xl text-text`}>{children}</h1>;
+            return <h1 className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-6xl text-text`}>{newChildren}</h1>;
         case 'h2':
-            return <h2 className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-3xl`}>{children}</h2>;
+            return <h2 className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-3xl`}>{newChildren}</h2>;
         case 'h3':
-            return <h3 className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-2xl`}>{children}</h3>;
+            return <h3 className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-2xl`}>{newChildren}</h3>;
         case 'h4':
-            return <h4 className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-xl`}>{children}</h4>;
+            return <h4 className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-xl`}>{newChildren}</h4>;
         case 'p':
-            return <p className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-base`}>{children}</p>;
+            return <p className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-base`}>{newChildren}</p>;
         default:
-            return <p className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-base`}>{children}</p>;
+            return <p className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-base`}>{newChildren}</p>;
     }
 }
 

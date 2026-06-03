@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Container from "../components/container/Container";
 import CustomText from "../components/typography/CustomText";
+import MarkDownText from "../components/typography/MarkdownText";
 
 const About = () => {
 
@@ -11,11 +12,11 @@ const About = () => {
 
     return (
         <Container spacing={10} direction="column">
-            <CustomText variant='p'>{test}</CustomText>
+            <MarkDownText wrapper='p'>{test}</MarkDownText>
             <CustomText variant='h3'>{t("home.title")}</CustomText>
             {
                 paragraph.map((p, index) => (
-                    <CustomText key={index} variant='p'>{p}</CustomText>
+                    <MarkDownText key={'About-' + index} wrapper='p'>{p}</MarkDownText>
                 ))
             }
         </Container>

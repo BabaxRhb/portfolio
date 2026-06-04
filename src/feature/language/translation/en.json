@@ -48,7 +48,7 @@
                 "title": "Likeo",
                 "shortDescription": "A social media app",
                 "description": "Likeo is a social media app that allows users to share their thoughts, photos with friends or within their group. It features a user-friendly interface, real-time chat.",
-                "techno": ["React", "Node.js", "Express", "PostgreSQL"],
+                "techno": ["React", "Node.js", "Fastify", "PostgreSQL"],
                 "type": "Group",
                 "contribution": "I was part of the frontend team, implementing the user interface and ensuring a seamless user experience. I collaborated closely with the backend team to integrate APIs and optimize performance on the features : real-time chat, group management, search."
             },
@@ -89,7 +89,7 @@
                 "title": "Periodic Table",
                 "shortDescription": "Fun and interactive way to learn chemistry",
                 "description": "The Periodic Table project is an interactive web application designed to help users learn about the elements in a fun and engaging way. It features a visually appealing interface that allows users to explore the properties, atomic structure, and other relevant information about each element.",
-                "techno": ["React", "TypeScript"],
+                "techno": ["React"],
                 "type": "Individual",
                 "link": "/periodic-table"
             },

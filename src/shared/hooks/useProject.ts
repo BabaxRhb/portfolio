@@ -29,7 +29,10 @@ const useProject = () => {
                 ...schoolProjectList[1],
                 link: rootLink + "42/" + "webserv",
                 imgUrl: [
-                    "/project/webserv/webserv.webm"
+                    "/project/webserv/webserv1.png",
+                    "/project/webserv/webserv2.png",
+                    "/project/webserv/webserv3.png",
+                    "/project/webserv/webserv4.png"
                 ],
                 status : true
             },
@@ -45,9 +48,7 @@ const useProject = () => {
                 ...schoolProjectList[3],
                 imgUrl: [
                     "/project/cub3D/cub1.png",
-                    "/project/cub3D/cub2.png",
-                    "/project/cub3D/cub3d.webm",
-                ],
+                    "/project/cub3D/cub2.png"                ],
                 link: rootLink + "42/" + "cub3D",
                 status : true
             },
@@ -69,18 +70,12 @@ const useProject = () => {
             { 
                 ...personnalProjectList[0],
                 link: rootLink + "personal/" + "periodicTable",
-                imgUrl: [
-                    "/project/periodicTable/periodicTable1.png",
-                ],
                 status : false
             },
             { 
                 ...personnalProjectList[1],
                 link: rootLink + "personal/" + "voteApi",
                 techno : ['MongoDB, Node.js'],
-                imgUrl: [
-                    "/project/voteApi/voteApi1.png"
-                ],
                 status : false
             }
         ]

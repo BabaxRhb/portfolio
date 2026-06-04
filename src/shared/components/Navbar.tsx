@@ -41,7 +41,7 @@ const NavMenu = ({ direction} : { direction: string }) => {
 	const baseStyle = "phone:text-2xl text-lg font-bold mx-5 hover:scale-105 transition-all";
 
 	return (
-		<div className={`flex ${directionClass} w-full`}>
+		<div className={`flex phone:relative ${directionClass} w-full`}>
 			<NavigateLinkBtn link={navbarItems[0].link} title={navbarItems[0].title} baseStyle={baseStyle} />
 			<NavigateLinkBtn link={navbarItems[1].link} title={navbarItems[1].title} baseStyle={baseStyle} />
 			<div
@@ -53,15 +53,16 @@ const NavMenu = ({ direction} : { direction: string }) => {
 				<button
 					className={`max-phone:text-left ${baseStyle}`}
 					onClick={() => setProjectClick(prev => !prev)
-				}>{t("project.title")}</button>
+					}>{t("project.title")}</button>
 				{
 					projectClick &&
-						<div className="flex flex-col w-fit phone:absolute phone:top-15 bg-background/75 backdrop-blur-md rounded-md">
+						<div className="flex flex-col w-fit phone:absolute phone:top-10 z-100 bg-background/75 backdrop-blur-md rounded-md">
 							<NavigateLinkBtn link={navbarItems[2].link} title={navbarItems[2].title} baseStyle={baseStyle} />
 							<NavigateLinkBtn link={navbarItems[3].link} title={navbarItems[3].title} baseStyle={baseStyle} />
 						</div>
 				}
 			</div>
+			{ projectClick && <div className="fixed w-full h-screen top-0 left-0" onClick={() => setProjectClick(false)}></div>}
 		</div>	
 	)
 }
@@ -80,6 +81,7 @@ const Navbar = () => {
 					<NavMenu direction="column"/>
 				</div>
 			}
+			{ menuClick && <div className="fixed w-full h-screen left-0" onClick={() => setMenuClick(false)}></div>}
 		</nav>
 	);
 };

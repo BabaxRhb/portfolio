@@ -38,7 +38,6 @@ const ProjectTemplate = () => {
 					<CustomText>{project.contribution}</CustomText>
 				</Container>
 			}
-
 		</Container>
 	)
 }

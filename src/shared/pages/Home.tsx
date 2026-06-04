@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Container from "../components/container/Container";
+import MarkDownText from "../components/typography/MarkdownText";
 import CustomText from "../components/typography/CustomText";
 
 const Home = () => {
@@ -7,10 +8,9 @@ const Home = () => {
 
     return (
         <Container spacing={10} direction="column">
-            <CustomText variant='h3'>{t("home.title")}</CustomText>
-            <CustomText variant='h3'>{t("home.subtitle")}</CustomText>
-            <CustomText variant='p'>{t("home.body")}</CustomText>
-        </Container>
+            <MarkDownText wrapper='h3'>{t("home.title")}</MarkDownText>
+            <MarkDownText wrapper='h3'>{t("home.subtitle")}</MarkDownText>
+            <CustomText variant='p'>{t("home.body")}</CustomText></Container>
     )
 }
 

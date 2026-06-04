@@ -2,20 +2,21 @@ import CustomText from "./CustomText";
 
 const MarkDownText = ({children, wrapper} : { children : string, wrapper : string }) => {
 
-	const splittedText = children.split("**")
+	const splittedText = children.match(/\*\*[^\*]+\*\*|[^\*]+/g)
 
 	return (
-		<div className="flex">
+		<CustomText variant={wrapper}>
 		{
-			splittedText.map((unitText, index) => {
-
+			splittedText && splittedText.map((unitText, index) => {
 				if (unitText.includes("**"))
-					return <strong key={index}>{unitText}</strong>;
-				else
-					return <CustomText variant={wrapper} key={index} >{unitText}</CustomText>
+				{
+					const trim = unitText.replace(/^\*\*|\*\*$/g, "");
+					return <strong key={index} className="text-accent">{trim}</strong>;
+				}
+				return unitText
 			})
 		}
-		</div>
+		</CustomText>
 	)
 }
 

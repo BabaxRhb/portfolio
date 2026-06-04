@@ -1,7 +1,6 @@
 interface TextProps {
     variant?: string;
-    // children: React.ReactNode;
-    children: string;
+    children: React.ReactNode;
     textColor?: string;
     textWeight?: string;
 }

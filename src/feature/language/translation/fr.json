@@ -1,15 +1,106 @@
 {
-  "home": {
-    "title": "Bonjour, je suis Barbara Randrianarisaona",
-    "subtitle": "Développeuse FullStack Junior Créative",
-    "body": "Je combine art et code pour créer des expériences web centrées sur l’humain."
-  },
-  "about": {
-    "paragraph": [
-      "Je viens de Madagascar, où j’ai obtenu un diplôme en génie chimique. J’ai travaillé dans le domaine HSE (Hygiène, Sécurité et Environnement), où j’ai rapidement ressenti de la frustration face aux tâches répétitives et aux processus manuels.\n\nJe voulais automatiser, optimiser et créer des outils qui rendent réellement le travail plus simple. Cette curiosité m’a conduite à apprendre la programmation, étape par étape, en autodidacte.",
-      "Puis une opportunité qui a changé ma vie s’est présentée : l’école 42 a ouvert dans mon pays. J’ai décidé de m’engager pleinement dans l’apprentissage de l’informatique et du développement logiciel.",
-      "En parallèle de l’informatique, j’ai toujours aimé l’art : le dessin, la peinture, la sculpture, puis le design UI/UX.\n\nLe développement frontend m’est venu naturellement : c’est comme dessiner avec du code. Puisque la fonctionnalité est aussi importante que l’esthétique, je développe également activement mes compétences en backend.",
-      "Aujourd’hui, je suis une développeuse fullstack junior qui aime créer des solutions créatives et efficaces pour les personnes qui, comme moi auparavant, sont fatiguées des tâches répétitives et souhaitent des outils qui améliorent réellement leur quotidien."
-    ]
-  }
+    "home" : {
+        "title": "Bonjour, je suis **Barbara Randrianarisaona**",
+        "subtitle": "**Développeuse FullStack Junior Créative**",
+        "body": "Je mélange l'art et le code pour créer des expériences web réfléchies et centrées sur l'humain."
+    },
+
+    "about": {
+        "title": "À propos",
+        "paragraph": [
+            "Je viens de Madagascar, où j'ai obtenu un diplôme en Génie Chimique. J'ai travaillé dans le domaine de l'HSE (Hygiène, Sécurité et Environnement) où j'ai rapidement ressenti de la frustration face à des tâches répétitives.",
+            "Puis une opportunité qui a changé ma vie s'est présentée : **School 42** a ouvert dans mon pays. J'ai décidé de m'engager pleinement dans l'apprentissage de la programmation.",
+            "Parallèlement à l'informatique, j'ai toujours aimé l'art : le dessin, la peinture, la sculpture, et plus tard le design UI/UX.\n\n**Le développement frontend m'a semblé naturel**, c'est comme dessiner avec du code. Depuis ses débuts, j'ai su que cela me passionnerait.",
+            "Aujourd'hui, je suis une **Développeuse FullStack Junior** qui aime créer des solutions efficaces pour les gens qui, comme je l'ai été, sont fatigués du travail répétitif et qui veulent des outils qui améliorent vraiment leur quotidien."
+        ]
+    },
+
+    "skill": {
+        "title": "Compétences",
+        "subtitle": {
+            "web" : "Développement web",
+            "IT" : "Informatique",
+            "design" : "Design"
+        }
+    },
+
+    "project" : {
+        "title": "Projets",
+        "ongoing" : "Projet en cours",
+        "42": {
+            "title": "Projets 42",
+            "acro": "42"
+        },
+        "personal": {
+            "title": "Projets Personnels",
+            "acro": "Personnel"
+        },
+        "subtitle": {
+            "description": "Description",
+            "techno": "Technologies",
+            "contribution": "Ma contribution"
+        }
+    },
+
+    "projects": {
+        "42" : [
+            {
+                "title": "Likeo",
+                "shortDescription": "Une application de réseau social",
+                "description": "Likeo est une application de réseau social qui permet aux utilisateurs de partager leurs pensées et photos avec des amis ou au sein de leur groupe. Elle offre une interface conviviale, des commentaires en temps réel et des fonctionnalités de groupe robustes.",
+                "techno": ["React", "Node.js", "Fastify", "PostgreSQL"],
+                "type": "Groupe",
+                "contribution": "J'ai fait partie de l'équipe frontend, en implémentant l'interface utilisateur et en assurant une expérience utilisateur fluide. J'ai collaboré étroitement avec l'équipe backend pour intégrer les API et optimiser les performances."
+            },
+            {
+                "title": "Webserv",
+                "shortDescription": "Un serveur web à partir de zéro",
+                "description": "Webserv est un serveur web HTTP/1.1, construit à partir de zéro. Il supporte les méthodes GET - POST - DELETE, les téléchargements de fichiers, PHP CGI, et un système de configuration basé sur des fichiers (routage).",
+                "techno": ["C++"],
+                "type": "Groupe",
+                "contribution": "J'ai développé certaines fonctionnalités essentielles telles que l'analyse des requêtes, la génération de réponses, la CGI (Common Gateway Interface) pour le contenu dynamique."
+            },
+            {
+                "title": "Inception",
+                "shortDescription": "Dockerisation pour Wordpress",
+                "description": "Inception implique la dockerisation d'une application Wordpress. Cela inclut la configuration d'un environnement Docker, la création de Dockerfiles, et la configuration des services nécessaires (Nginx, MariaDB, Wordpress).",
+                "techno": ["Docker"],
+                "type": "Individuel"
+            },
+            {
+                "title": "Cub3D",
+                "shortDescription": "Rendu par raycasting en temps réel",
+                "description": "Cub3D est un projet de rendu par raycasting en temps réel qui crée un environnement 3D à partir d'une carte 2D. Il utilise des techniques de raycasting pour rendre la scène de manière réaliste.",
+                "techno": ["C"],
+                "type": "Binôme",
+                "contribution": "J'ai travaillé sur l'analyse de la carte 2D, et j'étais responsable du rendu 3D à partir des calculs effectués par mon partenaire : rendu de sprites, mapping de textures, et gestion des interactions."
+            },
+            {
+                "title": "Minishell",
+                "shortDescription": "Shell UNIX avec fonctionnalités de base",
+                "description": "Minishell est une implémentation de shell qui fournit des fonctionnalités de base telles que l'exécution de commandes, la redirection d'entrée/sortie, et le piping. Elle est conçue pour imiter le comportement d'un vrai shell UNIX.",
+                "techno": ["C"],
+                "type": "Binôme",
+                "contribution": "J'ai travaillé sur l'analyse des entrées, la gestion des erreurs, la gestion des signaux et l'implémentation de la commande built-in cd."
+            }
+        ],
+        "personnal" : [
+            {
+                "title": "Tableau Périodique",
+                "shortDescription": "Un moyen amusant et interactif d'apprendre la chimie",
+                "description": "Le projet Tableau Périodique est une application web interactive conçue pour aider les utilisateurs à apprendre les éléments chimiques de manière amusante et engageante. Elle offre une expérience visuelle immersive avec des détails sur chaque élément.",
+                "techno": ["React"],
+                "type": "Individuel",
+                "link": "/periodic-table"
+            },
+            {
+                "title": "Vote API",
+                "shortDescription": "Une API de vote et de sondage",
+                "description": "Vote API est une application backend qui fournit des endpoints pour créer et gérer des sondages, permettant aux utilisateurs de voter sur divers sujets. Elle inclut des fonctionnalités telles que la gestion des utilisateurs et le suivi des résultats en temps réel.",
+                "techno": ["Node.js", "Express", "MongoDB"],
+                "type": "Individuel",
+                "link": "/vote-api"
+            }
+        ]
+    }
 }

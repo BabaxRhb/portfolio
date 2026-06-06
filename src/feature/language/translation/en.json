@@ -8,10 +8,10 @@
     "about": {
         "title": "About",
         "paragraph": [
-            "I’m from Madagascar, where I earned a degree in Chemical Engineering. I took a job in the field of EHS (Environment, Health and Safety) where I quickly grew frustrated with repetitive tasks and manual processes.\n\nI wanted to **automate, optimize, and build tools that actually make work easier.** That curiosity led me to coding which I learned step by step on my own.",
-            "Then a life-changing opportunity appeared : **School 42** opened in my country. I made the decision to fully commit in learning computer science and software development.",
-            "Alongside IT, I’ve always loved art : drawing, painting, sculpting, and later UI/UX design.\n\n**Frontend development felt natural** to me: it’s like drawing with code. Since functionality matters as much as aesthetics, I’m also actively **developing my Backend skills.**",
-            "Today, I’m a **Fullstack Junior Developer** who enjoys creating creative, efficient solutions for people who, like I once did, are tired of repetitive work and want tools that genuinely improve their daily lives."
+            "I’m from Madagascar, where I earned a degree in Chemical Engineering. I took a job in the field of EHS (Environment, Health and Safety) where I quickly grew frustrated from repetitive tasks and manual processes.\n\nI wanted to **automate, optimize, and build tools that can make work easier.** That curiosity led me to coding which I learned step by step on my own.",
+            "Then a life-changing opportunity appeared : **School 42** opened in my country. I made the decision to fully commit in learning programming.",
+            "Alongside IT, I’ve always loved art : drawing, painting, sculpting, and later UI/UX design.\n\n**Frontend development felt natural**, it’s like drawing with code. Since functionality is just as important as aesthetics, I am also actively **improving my backend development skills.**",
+            "Today, I’m a **Fullstack Junior Developer** who enjoys creating efficient solutions for people who, like I once did, are tired of repetitive work and want tools that genuinely improve their daily lives."
         ]
     },
 
@@ -47,7 +47,7 @@
             {
                 "title": "Likeo",
                 "shortDescription": "A social media app",
-                "description": "Likeo is a social media app that allows users to share their thoughts, photos with friends or within their group. It features a user-friendly interface, real-time chat.",
+                "description": "Likeo is a social media app that allows users to share their thoughts, photos with friends or within their group. It features a user-friendly interface, real-time chat, group management.",
                 "techno": ["React", "Node.js", "Fastify", "PostgreSQL"],
                 "type": "Group",
                 "contribution": "I was part of the frontend team, implementing the user interface and ensuring a seamless user experience. I collaborated closely with the backend team to integrate APIs and optimize performance on the features : real-time chat, group management, search."
@@ -55,7 +55,7 @@
             {
                 "title": "Webserv",
                 "shortDescription": "A web server from scratch",
-                "description": "Webserv is a web server built from scratch using C++ programming language. an HTTP/1.1 web server supporting GET, POST, and DELETE methods, file uploads, PHP CGI, and a file-based configuration system (routing and server settings).",
+                "description": "Webserv is an HTTP/1.1 web server, built from scratch. It supports GET - POST - DELETE methods, file uploads, PHP CGI, and a file-based configuration system (routing and server settings).",
                 "techno": ["C++"],
                 "type": "Group",
                 "contribution": "I developed some core functionalities such as request parsing, response generation, the CGI (Common Gateway Interface) for dynamic content."
@@ -63,14 +63,14 @@
             {
                 "title": "Inception",
                 "shortDescription": "Dockerization for Wordpress",
-                "description": "Inception is a project that involves dockerizing a Wordpress application. It includes setting up a Docker environment, creating Dockerfiles, and configuring the necessary services such as MySQL and phpMyAdmin to run the Wordpress application smoothly.",
+                "description": "Inception involves dockerizing a Wordpress application. It includes setting up a Docker environment, creating Dockerfiles, and configuring the necessary services (Nginx, MariaDb, Wordpress) to run the Wordpress application smoothly.",
                 "techno": ["Docker"],
                 "type": "Individual"
             },
             {
                 "title": "Cub3D",
                 "shortDescription": "Real-time raycasting rendering",
-                "description": "Cub3D is a real-time raycasting rendering project that creates a 3D environment using a 2D map. It utilizes raycasting techniques to render the scene",
+                "description": "Cub3D is a real-time raycasting rendering project that creates a 3D environment using a 2D map. It uses raycasting techniques to render the scene",
                 "techno": ["C"],
                 "type": "Pair",
                 "contribution": "I worked on the 2D map parsing, and was in charge of the 3D rendering from the calculation made by my partner : sprite rendering, texture mapping, and interactions within the 3D environment."
@@ -78,7 +78,7 @@
             {
                 "title": "Minishell",
                 "shortDescription": "Shell UNIX with basics functionnality",
-                "description": "Minishell is a simple shell implementation that provides basic functionalities such as command execution, input/output redirection, and piping. It is designed to mimic the behavior of a typical Unix shell while being lightweight and efficient.",
+                "description": "Minishell is a shell implementation that provides basic functionalities such as command execution, input/output redirection, and piping. It is designed to mimic the behavior of a typical Unix shell while being lightweight and efficient.",
                 "techno": ["C"],
                 "type": "Pair",
                 "contribution": "I worked on the input parsing, error handling, signal management and the implementation of built-in cd command."
@@ -88,7 +88,7 @@
             {
                 "title": "Periodic Table",
                 "shortDescription": "Fun and interactive way to learn chemistry",
-                "description": "The Periodic Table project is an interactive web application designed to help users learn about the elements in a fun and engaging way. It features a visually appealing interface that allows users to explore the properties, atomic structure, and other relevant information about each element.",
+                "description": "The Periodic Table project is an interactive web application designed to help users learn about the chemical elements in a fun and engaging way. It features a visually appealing interface that allows users to explore the properties, atomic structure, and other relevant information about each element.",
                 "techno": ["React"],
                 "type": "Individual",
                 "link": "/periodic-table"

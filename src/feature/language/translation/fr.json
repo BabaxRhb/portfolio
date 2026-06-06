@@ -8,10 +8,10 @@
     "about": {
         "title": "À propos",
         "paragraph": [
-            "Je viens de Madagascar, où j'ai obtenu un diplôme en Génie Chimique. J'ai travaillé dans le domaine de l'HSE (Hygiène, Sécurité et Environnement) où j'ai rapidement ressenti de la frustration face à des tâches répétitives.",
-            "Puis une opportunité qui a changé ma vie s'est présentée : **School 42** a ouvert dans mon pays. J'ai décidé de m'engager pleinement dans l'apprentissage de la programmation.",
-            "Parallèlement à l'informatique, j'ai toujours aimé l'art : le dessin, la peinture, la sculpture, et plus tard le design UI/UX.\n\n**Le développement frontend m'a semblé naturel**, c'est comme dessiner avec du code. Depuis ses débuts, j'ai su que cela me passionnerait.",
-            "Aujourd'hui, je suis une **Développeuse FullStack Junior** qui aime créer des solutions efficaces pour les gens qui, comme je l'ai été, sont fatigués du travail répétitif et qui veulent des outils qui améliorent vraiment leur quotidien."
+            "Je viens de Madagascar, où j'ai obtenu un diplôme en Génie Chimique. J'ai travaillé dans le domaine du HSE (Hygiène, Sécurité et Environnement) où j'ai rapidement ressenti de la frustration face à des tâches répétitives.\n\nJ’avais envie d’**automatiser, d’optimiser et de créer des outils capables de simplifier le travail au quotidien**.\n\nCe désir m’a poussé vers la programmation en étant autodidacte.",
+            "Puis une opportunité qui a changé ma vie s'est présentée : **L'école 42** a ouvert ses portes dans mon pays. J'ai décidé de m'engager pleinement dans l'apprentissage de la programmation.",
+            "Parallèlement à l'informatique, j'ai toujours aimé l'art : le dessin, la peinture, la sculpture, et plus tard le design UI/UX.\n\n**Le développement frontend m'a semblé naturel**, c'est comme dessiner avec du code. Puisque la fonctionnalité est tout aussi importante que l’esthétique, je continue également à **développer activement mes compétences en backend.**",
+            "Aujourd'hui, je suis une **Développeuse FullStack Junior** qui aime créer des solutions efficaces pour les personnes qui, comme je l'ai été, sont fatiguées du travail répétitif et veulent des outils pour améliorer leur vie quotidienne."
         ]
     },
 
@@ -47,10 +47,10 @@
             {
                 "title": "Likeo",
                 "shortDescription": "Une application de réseau social",
-                "description": "Likeo est une application de réseau social qui permet aux utilisateurs de partager leurs pensées et photos avec des amis ou au sein de leur groupe. Elle offre une interface conviviale, des commentaires en temps réel et des fonctionnalités de groupe robustes.",
+                "description": "Likeo est une application de réseau social qui permet aux utilisateurs de partager leurs pensées et photos avec des amis ou au sein de leur groupe. Elle offre une interface conviviale, un 'chat' en temps réel et des fonctionnalités de groupe.",
                 "techno": ["React", "Node.js", "Fastify", "PostgreSQL"],
                 "type": "Groupe",
-                "contribution": "J'ai fait partie de l'équipe frontend, en implémentant l'interface utilisateur et en assurant une expérience utilisateur fluide. J'ai collaboré étroitement avec l'équipe backend pour intégrer les API et optimiser les performances."
+                "contribution": "J'ai fait partie de l'équipe frontend, en implémentant l'interface utilisateur et en assurant une expérience utilisateur fluide. J'ai collaboré étroitement avec l'équipe backend pour intégrer les API et optimiser les performances pour les fonctionnalités : chat, groupe et recherche d'utilisateur."
             },
             {
                 "title": "Webserv",

@@ -4,9 +4,9 @@ import LinkBtn from "../components/ui/button/LinkBtn";
 const Footer = () => {
 
 	const footerLinkArray = [
-		{ link : "#", text: "LinkedIn" },
-		{ link : "#", text: "Github" },
-		{ link : "#", text: "Email" },
+		{ link : "https://www.linkedin.com/in/barbara-randrianarisaona/", text: "LinkedIn" },
+		{ link : "https://github.com/BabaxRhb", text: "Github" },
+		{ link : "mailto:baba.randrianarisaona@gmail.com", text: "Email" },
 	];
 
 	const position = "fixed bottom-0";

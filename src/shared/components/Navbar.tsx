@@ -30,6 +30,7 @@ const NavMenu = ({ direction} : { direction: string }) => {
 	const isProjectsPath = pathname.includes("projects");
 
 	const navbarItems = [
+	  { title: t("home.title"),link: "/home" },
 	  { title: t("about.title"),link: "/about" },
 	  { title: t("skill.title"), link: "/skills" },
 	  { title: t("project.42.acro"), link: "/projects/42"},

@@ -8,7 +8,12 @@ interface LinkBtnProps {
 const LinkBtn = ({ link, text }: LinkBtnProps) => {
 
 	return (
-		<a href={link} type="button">
+		<a
+			href={link}
+			type="button"
+			target={link.startsWith("mailto:") ? undefined : "_blank"}
+			rel={link.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+		>
 			<div className="flex flex-row hover:scale-105 transition-all">
 				{text}
 				<Arrow className="rotate-45 stroke-accent fill-accent w-5 h-5"/>

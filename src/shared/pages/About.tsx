@@ -9,7 +9,7 @@ const About = () => {
 
     return (
         <Container spacing={10} direction="column">
-            <MarkDownText wrapper='h3'>{t("home.title")}</MarkDownText>
+            <MarkDownText wrapper='h3'>{t("home.hello")}</MarkDownText>
             {
                 paragraph.map((p, index) => (
                     <MarkDownText key={'About-' + index} wrapper='p'>{p}</MarkDownText>

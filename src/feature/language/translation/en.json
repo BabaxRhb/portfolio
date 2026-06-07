@@ -1,6 +1,7 @@
 {
     "home" : {
-        "title": "Hi, I'm **Barbara Randrianarisaona**",
+        "title": "Home",
+        "hello": "Hi, I'm **Barbara Randrianarisaona**",
         "subtitle": "**Creative FullStack Junior Developer**",
         "body": "I blend art and code to build thoughtful, human-centered web experiences."
     },

@@ -1,6 +1,7 @@
 {
     "home" : {
-        "title": "Bonjour, je suis **Barbara Randrianarisaona**",
+        "title": "Accueil",
+        "hello": "Bonjour, je suis **Barbara Randrianarisaona**",
         "subtitle": "**Développeuse FullStack Junior Créative**",
         "body": "Je mélange l'art et le code pour créer des expériences web réfléchies et centrées sur l'humain."
     },

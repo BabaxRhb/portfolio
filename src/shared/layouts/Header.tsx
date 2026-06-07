@@ -21,7 +21,7 @@ const Header = () => {
 
 	return (
 		<Container spacing={2} position={position} customStyle={customStyle}>
-			<HeaderElement><NavigationBtn link={'/'} Icon={Avatar}/></HeaderElement>
+			<HeaderElement><NavigationBtn link={'/'} Icon={Avatar} size={100} /></HeaderElement>
 			<Navbar />
 			<Container spacing={2}>
 				<HeaderElement><SwitchLangBtn /></HeaderElement>

@@ -5,6 +5,7 @@ interface BtnProps {
     link?: string;
     size?: number;
     Icon?: ElementType;
+    imgUrl?: string;
     onClick?: () => void;
 }
 
@@ -24,6 +25,21 @@ const NavigationBtn = ({ link, size = defaultSize, Icon }: BtnProps) => {
     )
 }
 
+
+const NavigationImgBtn = ({ link, size = defaultSize, imgUrl }: BtnProps) => {
+
+    const navigate = useNavigate();
+
+    return (
+        <button
+            className={`flex items-center justify-center`}
+            onClick={() => link ? navigate(link) : null}
+        >
+            <img src={imgUrl} alt="avatar"/>
+        </button>
+    )
+}
+
 const ActionBtn = ({ onClick, size = defaultSize, Icon }: BtnProps) => {
 
     return (
@@ -36,4 +52,4 @@ const ActionBtn = ({ onClick, size = defaultSize, Icon }: BtnProps) => {
     )
 }
 
-export { NavigationBtn, ActionBtn };
+export { NavigationBtn, NavigationImgBtn, ActionBtn };

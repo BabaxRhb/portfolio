@@ -45,6 +45,7 @@ const NavMenu = ({ direction} : { direction: string }) => {
 		<div className={`flex phone:relative ${directionClass} w-full`}>
 			<NavigateLinkBtn link={navbarItems[0].link} title={navbarItems[0].title} baseStyle={baseStyle} />
 			<NavigateLinkBtn link={navbarItems[1].link} title={navbarItems[1].title} baseStyle={baseStyle} />
+			<NavigateLinkBtn link={navbarItems[2].link} title={navbarItems[2].title} baseStyle={baseStyle} />
 			<div
 				className={`
 					${ isProjectsPath ? "text-text" : "text-text-disabled"}
@@ -58,8 +59,8 @@ const NavMenu = ({ direction} : { direction: string }) => {
 				{
 					projectClick &&
 						<div className="flex flex-col w-fit phone:absolute phone:top-10 z-100 bg-background/75 backdrop-blur-md rounded-md">
-							<NavigateLinkBtn link={navbarItems[2].link} title={navbarItems[2].title} baseStyle={baseStyle} />
 							<NavigateLinkBtn link={navbarItems[3].link} title={navbarItems[3].title} baseStyle={baseStyle} />
+							<NavigateLinkBtn link={navbarItems[4].link} title={navbarItems[4].title} baseStyle={baseStyle} />
 						</div>
 				}
 			</div>

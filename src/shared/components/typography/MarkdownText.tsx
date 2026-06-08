@@ -1,11 +1,17 @@
+import type { CSSProperties } from 'react';
 import CustomText from "./CustomText";
 
-const MarkDownText = ({children, wrapper} : { children : string, wrapper : string }) => {
+const MarkDownText = ({children, wrapper, addClass, style} : 
+	{ children : string,
+		wrapper : string,
+		addClass?: string,
+		style?: CSSProperties
+	}) => {
 
 	const splittedText = children.match(/\*\*[^\*]+\*\*|[^\*]+/g)
 
 	return (
-		<CustomText variant={wrapper}>
+		<CustomText variant={wrapper} addClass={addClass} style={style}>
 		{
 			splittedText && splittedText.map((unitText, index) => {
 				if (unitText.includes("**"))

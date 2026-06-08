@@ -84,3 +84,27 @@
   --accent-light: #6EA6D1;
   --accent-dark: #46779C;
 }
+
+.animate-text {
+  overflow: hidden;
+  border-right: 2px solid var(--accent);
+  animation: typing 2s;
+  animation-fill-mode: forwards;
+  white-space: nowrap;
+  opacity: 0;
+  display: inline-block;
+  line-height: 1.4;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+    border-right-color: var(--accent);
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    border-right-color: transparent;
+    opacity: 1;
+  }
+}

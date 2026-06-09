@@ -13,11 +13,10 @@ const LinkBtn = ({ link, text }: LinkBtnProps) => {
 			type="button"
 			target={link.startsWith("mailto:") ? undefined : "_blank"}
 			rel={link.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+			className="flex flex-row"
 		>
-			<div className="flex flex-row hover:scale-105 transition-all">
 				{text}
 				<Arrow className="rotate-45 stroke-accent fill-accent w-5 h-5"/>
-			</div>
 		</a>
 	)
 }

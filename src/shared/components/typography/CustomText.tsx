@@ -30,25 +30,35 @@ const textWeights = {
     black : 'font-black',
 }
 
+const textSizes = {
+    h1: 'text-4xl',
+    h2: 'text-2xl',
+    h3: 'text-xl',
+    h4: 'text-l',
+    p: 'text-base',
+    def: 'text-base',
+};
+
 const CustomText = ({ variant = 'def', children, textColor, textWeight, addClass, style }: TextProps) => {
 
     const textColorClass = textColors[textColor as keyof typeof textColors] || 'text-text';
-    const textWeightClass = textWeights[textWeight as keyof typeof textWeight] || 'text-normal';
-    const defaultStyle = 'text-center' + ' ' + addClass;
+    const textWeightClass = textWeights[textWeight as keyof typeof textWeights] || 'font-normal';
+    const textSizeClass = textSizes[variant as keyof typeof textSizes] || 'text-base';
+    const defaultStyle = 'text-center' + ' ' + (addClass || '');
 
     switch (variant) {
         case 'h1':
-            return <h1 style={style} className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-6xl text-text`}>{children}</h1>;
+            return <h1 style={style} className={`${defaultStyle} ${textSizeClass} ${textColorClass} ${textWeightClass}`}>{children}</h1>;
         case 'h2':
-            return <h2 style={style} className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-3xl`}>{children}</h2>;
+            return <h2 style={style} className={`${defaultStyle} ${textSizeClass} ${textColorClass} ${textWeightClass}`}>{children}</h2>;
         case 'h3':
-            return <h3 style={style} className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-2xl`}>{children}</h3>;
+            return <h3 style={style} className={`${defaultStyle} ${textSizeClass} ${textColorClass} ${textWeightClass}`}>{children}</h3>;
         case 'h4':
-            return <h4 style={style} className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-xl`}>{children}</h4>;
+            return <h4 style={style} className={`${defaultStyle} ${textSizeClass} ${textColorClass} ${textWeightClass}`}>{children}</h4>;
         case 'p':
-            return <p style={style} className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-base`}>{children}</p>;
+            return <p style={style} className={`${defaultStyle} ${textSizeClass} ${textColorClass} ${textWeightClass}`}>{children}</p>;
         default:
-            return <p style={style} className={`${defaultStyle} ${textColorClass} ${textWeightClass} text-base`}>{children}</p>;
+            return <p style={style} className={`${defaultStyle} ${textSizeClass} ${textColorClass} ${textWeightClass}`}>{children}</p>;
     }
 }
 

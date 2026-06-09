@@ -23,18 +23,18 @@ const ProjectTemplate = () => {
 				<CustomText variant="p" textWeight="light">{type + " Project"}</CustomText>
 			</Container>
 			<Container direction="column" spacing={5}>
-				<BorderedText variant="h2">{t("project.subtitle.description")}</BorderedText>
+				<BorderedText variant="h4">{t("project.subtitle.description")}</BorderedText>
 				<CustomText>{description}</CustomText>
 				<Carousel imgUrl={imgUrl ? imgUrl : []}/>
 			</Container>
 			<Container direction="column" spacing={2}>
-				<BorderedText variant="h2">{t("project.subtitle.techno")}</BorderedText>
+				<BorderedText variant="h4">{t("project.subtitle.techno")}</BorderedText>
 				<SkillContainer skillArray={techno}/>
 			</Container>
 			{
 				project.contribution &&
 				<Container direction="column" spacing={2}>
-					<BorderedText variant="h2">{t("project.subtitle.contribution")}</BorderedText>
+					<BorderedText variant="h4">{t("project.subtitle.contribution")}</BorderedText>
 					<CustomText>{project.contribution}</CustomText>
 				</Container>
 			}

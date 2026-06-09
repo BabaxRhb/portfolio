@@ -37,9 +37,9 @@ const NavMenu = ({ direction} : { direction: string }) => {
 	  { title: t("project.personal.acro"), link: "/projects/personnal"}
 	];
 
-	const directionClass = direction === "row" ? "phone:flex-row max-phone:hidden" : "flex-col";
+	const directionClass = direction === "row" ? "phone:flex-row max-tablet:hidden" : "flex-col";
 
-	const baseStyle = "phone:text-2xl text-lg font-bold mx-5 hover:scale-105 transition-all";
+	const baseStyle = "font-bold mx-5 hover:scale-105 transition-all text-xl";
 
 	return (
 		<div className={`flex phone:relative ${directionClass} w-full`}>
@@ -53,7 +53,7 @@ const NavMenu = ({ direction} : { direction: string }) => {
 				`}
 			>
 				<button
-					className={`max-phone:text-left ${baseStyle}`}
+					className={`max-phone:text-left text-xl ${baseStyle}`}
 					onClick={() => setProjectClick(prev => !prev)
 					}>{t("project.title")}</button>
 				{
@@ -75,7 +75,7 @@ const Navbar = () => {
 	return (
 		<nav>
 			<NavMenu direction="row"/>
-			<div className="phone:hidden block hover:scale-110 transition-all">
+			<div className="tablet:hidden block hover:scale-110 transition-all">
 				<ActionBtn Icon={Menu} onClick={() => { setMenuClick(prev => !prev)}} />
 			</div>
 			{ menuClick &&

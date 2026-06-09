@@ -10,6 +10,25 @@
   body {
     @apply bg-background text-text;
   }
+
+  html {
+    font-size: 14px;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    html {
+      font-size: 20px;
+    }
+  }
+}
+
+@layer base {
 }
 
 @theme{
@@ -85,31 +104,3 @@
   --accent-dark: #46779C;
 }
 
-.animate-text {
-  overflow: hidden;
-  animation: typing 2s;
-  animation-fill-mode: forwards;
-  white-space: normal;
-  opacity: 0;
-}
-
-@keyframes typing {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-    opacity: 1;
-  }
-}
-
-.fadeImg {
-  opacity: 0;
-  animation: fade 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fade {
-  from { opacity: 0;}
-  to { opacity: 1;}
-}

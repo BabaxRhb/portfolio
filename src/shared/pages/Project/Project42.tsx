@@ -1,21 +1,33 @@
 import { BorderedText } from "../../components/typography/CustomText";
 import ProjectCard from "../../components/ui/ProjectCard";
 
-import useProject from "../../hooks/useProject";
+import { useTranslation } from "react-i18next";
+import  type { projectType } from "../../data/type";
 
 const Project42 = () => {
+	const projectType = "42";
+	const [ t ] = useTranslation("global");
 
-	const { schoolProject } = useProject();
+	const schoolProject = t(`projects.${projectType}`, { returnObjects: true }) as projectType[];
+
+	const context = t("project.42.title");
 
 	return (
 		<div className="flex flex-col gap-10">
-			<BorderedText variant="h3">{schoolProject.context}</BorderedText>
+			<BorderedText variant="h3">{context}</BorderedText>
 			{
-				schoolProject.projectList.map((project, index) => (
-					<div key={`first-${index}`} className="flex justify-center">
-						<ProjectCard project={project} rootLink="/projects/42/"/>
-					</div>
-				))
+				schoolProject.map((project, index) => {
+
+					return (
+						<div key={`${index}-${project.title}`} className="flex justify-center">
+							<ProjectCard 
+								projectId={index}
+								projectType={projectType}
+								rootLink="/projects/42/"
+							/>
+						</div>
+					)
+				})
 			}
 		</div>
 	)

@@ -1,20 +1,24 @@
 import { createContext, useContext, useState } from "react";
-import type { projectType } from "../data/type";
 
 const ProjectContext = createContext<{
-    selectedProject: projectType | null;
-    setSelectedProject: React.Dispatch<React.SetStateAction<projectType | null>>;
+    projectId: number | null;
+    projectType: string;
+    setProjectId: React.Dispatch<React.SetStateAction<number | null>>;
+    setProjectType: React.Dispatch<React.SetStateAction<string>>;
 }>({
-    selectedProject: null,
-    setSelectedProject: () => {}
+    projectId: null,
+    projectType: '42',
+    setProjectId: () => {},
+    setProjectType: () => {}
 });
 
 const ProjectProvider = ({ children }: { children: React.ReactNode }) => {
 
-    const [ selectedProject, setSelectedProject ] = useState<projectType | null >(null);
+    const [ projectId, setProjectId ] = useState<number | null >(null);
+    const [ projectType, setProjectType ] = useState('42');
     
 	return (
-		<ProjectContext.Provider value={{ selectedProject, setSelectedProject }}>
+		<ProjectContext.Provider value={{ projectId, setProjectId, projectType, setProjectType }}>
 			{children}
 		</ProjectContext.Provider>
 	)

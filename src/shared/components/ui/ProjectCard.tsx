@@ -9,20 +9,21 @@ import  type { projectType } from "../../data/type";
 import { useSelectedProject } from "../../providers/ProjectProvider";
 
 interface ProjectCardProps {
-	project : projectType & {
-		status: boolean
-	}
+	projectId: number,
+	projectType: string,
 	rootLink: string;
 }
 
-const ProjectCard = ( { project, rootLink } : ProjectCardProps) => {
+const ProjectCard = ( { projectId, projectType, rootLink } : ProjectCardProps) => {
 
 	const [ t ] = useTranslation("global");
 	const navigate = useNavigate();
-	const { setSelectedProject } = useSelectedProject();
+	const { setProjectId, setProjectType } = useSelectedProject();
 	const [ isClicked, setIsClicked ] = useState(false);
 
-	const { title, shortDescription, imgUrl, techno, status } = project;
+	const project = t(`projects.${projectType}`, { returnObjects: true }) as projectType[];
+
+	const { title, shortDescription, imgUrl, techno, status } = project[projectId];
 
 	return (
 		<div 
@@ -37,13 +38,13 @@ const ProjectCard = ( { project, rootLink } : ProjectCardProps) => {
 				transition-all
 			"
 			onClick={(e) => {
-				const { status, ...projectWithoutStatus } = project;
 				if (status === false) {
 					setIsClicked(true);
 					return;
 				}
 				e.preventDefault();
-				setSelectedProject(projectWithoutStatus);
+				setProjectId(projectId);
+				setProjectType(projectType);
 				navigate(rootLink + title);
 			}}
 		>

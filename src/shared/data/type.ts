@@ -14,4 +14,5 @@ export type projectType = {
     imgUrl?: string[];
     contribution?: string;
     type?: string;
+    status: boolean;
 }

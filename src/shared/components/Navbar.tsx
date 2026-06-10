@@ -42,7 +42,7 @@ const NavMenu = ({ direction} : { direction: string }) => {
 	const baseStyle = "font-bold mx-5 hover:scale-105 transition-all text-xl";
 
 	return (
-		<div className={`flex phone:relative ${directionClass} w-full`}>
+		<div className={`flex tablet:relative ${directionClass} w-full`}>
 			<NavigateLinkBtn link={navbarItems[0].link} title={navbarItems[0].title} baseStyle={baseStyle} />
 			<NavigateLinkBtn link={navbarItems[1].link} title={navbarItems[1].title} baseStyle={baseStyle} />
 			<NavigateLinkBtn link={navbarItems[2].link} title={navbarItems[2].title} baseStyle={baseStyle} />
@@ -53,12 +53,12 @@ const NavMenu = ({ direction} : { direction: string }) => {
 				`}
 			>
 				<button
-					className={`max-phone:text-left text-xl ${baseStyle}`}
+					className={`max-tablet:text-left text-xl ${baseStyle}`}
 					onClick={() => setProjectClick(prev => !prev)
 					}>{t("project.title")}</button>
 				{
 					projectClick &&
-						<div className="flex flex-col w-fit phone:absolute phone:top-10 z-100 bg-background/75 backdrop-blur-md rounded-md">
+						<div className="flex flex-col w-fit tablet:absolute tablet:top-10 z-100 bg-background/75 backdrop-blur-md rounded-md">
 							<NavigateLinkBtn link={navbarItems[3].link} title={navbarItems[3].title} baseStyle={baseStyle} />
 							<NavigateLinkBtn link={navbarItems[4].link} title={navbarItems[4].title} baseStyle={baseStyle} />
 						</div>
@@ -79,7 +79,7 @@ const Navbar = () => {
 				<ActionBtn Icon={Menu} onClick={() => { setMenuClick(prev => !prev)}} />
 			</div>
 			{ menuClick &&
-				<div className="absolute top-15 left-0 w-full p-4 bg-background/75 shadow-md z-5 phone:hidden">
+				<div className="absolute top-15 left-0 w-full p-4 bg-background/75 shadow-md z-5 tablet:hidden">
 					<NavMenu direction="column"/>
 				</div>
 			}

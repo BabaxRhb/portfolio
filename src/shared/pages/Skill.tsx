@@ -8,7 +8,7 @@ const Skill = () => {
 	const skills = [
 		{
 			title : t("skill.subtitle.web"),
-			skills : [ "HTML", "CSS", "TailwindCSS", "Material UI", "Javascript", "Typescript", "Node.js", "React.js", "SQL" ]
+			skills : [ "HTML", "CSS", "TailwindCSS", "Material UI", "Javascript", "Typescript", "Node.js", "React.js", "SQL", "Java" ]
 		},
 		{
 			title: t("skill.subtitle.IT"),

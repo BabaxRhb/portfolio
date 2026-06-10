@@ -3,16 +3,16 @@
         "title": "Accueil",
         "hello": "Bonjour, je suis **Barbara Randrianarisaona**",
         "subtitle": "**Développeuse FullStack Junior Créative**",
-        "body": "Je mélange l'art et le code pour créer des expériences web réfléchies et centrées sur l'humain."
+        "body": "Je mélange l'art et le code pour créer des expériences web centrées sur l'humain."
     },
 
     "about": {
         "title": "À propos",
         "paragraph": [
-            "Je viens de Madagascar, où j'ai obtenu un diplôme en Génie Chimique. J'ai travaillé dans le domaine du HSE (Hygiène, Sécurité et Environnement) où j'ai rapidement ressenti de la frustration face à des tâches répétitives.\n\nJ’avais envie d’**automatiser, d’optimiser et de créer des outils capables de simplifier le travail au quotidien**.\n\nCe désir m’a poussé vers la programmation en étant autodidacte.",
+            "Je viens de Madagascar, où j'ai obtenu un diplôme en Génie Chimique. J'ai ensuite travaillé dans le domaine du HSE (Hygiène, Sécurité et Environnement) où j'ai rapidement été frustrée par la répétitivité des tâches et les processus manuels.\n\nJ’avais envie d’**automatiser, d’optimiser et de créer des outils capables de simplifier le travail au quotidien**.\n\nCe désir m’a poussé vers la programmation en étant autodidacte.",
             "Puis une opportunité qui a changé ma vie s'est présentée : **L'école 42** a ouvert ses portes dans mon pays. J'ai décidé de m'engager pleinement dans l'apprentissage de la programmation.",
-            "Parallèlement à l'informatique, j'ai toujours aimé l'art : le dessin, la peinture, la sculpture, et plus tard le design UI/UX.\n\n**Le développement frontend m'a semblé naturel**, c'est comme dessiner avec du code. Puisque la fonctionnalité est tout aussi importante que l’esthétique, je continue également à **développer activement mes compétences en backend.**",
-            "Aujourd'hui, je suis une **Développeuse FullStack Junior** qui aime créer des solutions efficaces pour les personnes qui, comme je l'ai été, sont fatiguées du travail répétitif et veulent des outils pour améliorer leur vie quotidienne."
+            "En plus de l'informatique, j'ai toujours été passionné par l'art : le dessin, la peinture, la sculpture, puis plus tard le design UI/UX. **Le développement front-end m'est venu tout naturellement**, c'est un peu comme dessiner avec du code. Comme la fonctionnalité est tout aussi importante que l'esthétique, je m'efforce également d'**améliorer mes compétences en développement back-end.**",
+            "Aujourd'hui, je suis une **Développeuse FullStack Junior** qui aime créer des solutions efficaces pour ceux qui sont aussi fatiguées des tâches répétitives et recherchent des outils qui améliorent réellement leur quotidien."
         ]
     },
 
@@ -49,7 +49,7 @@
                 "title": "Likeo",
                 "shortDescription": "Une application de réseau social",
                 "description": "Likeo est une application de réseau social qui permet aux utilisateurs de partager leurs pensées et photos avec des amis ou au sein de leur groupe. Elle offre une interface conviviale, un 'chat' en temps réel et des fonctionnalités de groupe.",
-                "techno": ["React", "Node.js", "Fastify", "PostgreSQL"],
+                "techno": ["React.js", "Node.js", "Fastify", "PostgreSQL"],
                 "type": "Groupe",
                 "contribution": "J'ai fait partie de l'équipe frontend, en implémentant l'interface utilisateur et en assurant une expérience utilisateur fluide. J'ai collaboré étroitement avec l'équipe backend pour intégrer les API et optimiser les performances pour les fonctionnalités : chat, groupe et recherche d'utilisateur."
             },
@@ -90,7 +90,7 @@
                 "title": "Tableau Périodique",
                 "shortDescription": "Un moyen amusant et interactif d'apprendre la chimie",
                 "description": "Le projet Tableau Périodique est une application web interactive conçue pour aider les utilisateurs à apprendre les éléments chimiques de manière amusante et engageante. Elle offre une expérience visuelle immersive avec des détails sur chaque élément.",
-                "techno": ["React"],
+                "techno": ["React.js"],
                 "type": "Individuel",
                 "link": "/periodic-table"
             },

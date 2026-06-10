@@ -5,16 +5,20 @@ import SkillContainer from "../../components/container/SkillContainer";
 import Container from "../../components/container/Container";
 import { useTranslation } from "react-i18next";
 import Carousel from "../../components/container/Carousel";
+import type { projectType } from "../../data/type";
 
 const ProjectTemplate = () => {
 
-	const { selectedProject : project } = useSelectedProject();
-
 	const [ t ] = useTranslation("global");
+	const { selectedProject : project } = useSelectedProject();
 
 	if (!project) return <Navigate to="/projects" replace />;
 
-	const { title, description, techno, type, imgUrl } = project;
+	const { title, techno, type, imgUrl } = project;
+
+	const description = t(`projects.42`, { returnObjects: true }) as projectType[];
+
+	console.log("Description" , description);
 
 	return (
 		<Container  direction="column" spacing={8}>
@@ -24,7 +28,7 @@ const ProjectTemplate = () => {
 			</Container>
 			<Container direction="column" spacing={5}>
 				<BorderedText variant="h4">{t("project.subtitle.description")}</BorderedText>
-				<CustomText>{description}</CustomText>
+				<CustomText>{description[0].description}</CustomText>
 				<Carousel imgUrl={imgUrl ? imgUrl : []}/>
 			</Container>
 			<Container direction="column" spacing={2}>

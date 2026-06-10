@@ -4,7 +4,6 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 import global_en from "../translation/en.json"
 import global_fr from "../translation/fr.json"
-import global_mg from "../translation/mg.json"
 
 import type { ChildrenProps } from "../../../shared/data/type";
 
@@ -17,7 +16,6 @@ i18next
 	resources: {
 		en: { global: global_en },
 		fr: { global: global_fr },
-		mg: { global: global_mg },
 	},
 	detection: {
 		order: ["localStorage", "navigator"],

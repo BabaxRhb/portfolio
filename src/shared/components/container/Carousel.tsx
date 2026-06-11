@@ -34,7 +34,7 @@ const Carousel = ({ imgUrl }: { imgUrl: string[] }) => {
 	return (
     <div className="flex gap-1 items-center w-full max-w-3xl mx-auto">
 		{ currentIndex > 0 && <CarouselBtn direction="prev" onClick={handlePrevious} />}
-		<div className="overflow-hidden relative h-80">
+		<div className="overflow-hidden relative h-70">
 			<div
 				className="flex transition-transform duration-500 ease-in-out h-64"
 				style={{ transform: `translateX(-${currentIndex * 100}%)` }}

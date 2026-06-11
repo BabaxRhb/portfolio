@@ -30,7 +30,8 @@ const Home = () => {
 							text={text}
 							speed={speed}
 							delay={delay[index]}
-							wrapper="h4" />
+							wrapper="h4"
+						/>
 					})
 				}
 			</div>

@@ -54,8 +54,8 @@ const ProjectCard = ( { projectId, projectType, rootLink } : ProjectCardProps) =
 				: null
 			}
 			<Container direction="column" bgColor="inherit">
-				<CustomText variant="h4" textWeight="bold">{title}</CustomText>
-				<CustomText>{shortDescription}</CustomText>
+				<CustomText variant="h2" textWeight="bold">{title}</CustomText>
+				<CustomText variant="p">{shortDescription}</CustomText>
 				<SkillContainer skillArray={techno} skillTextSize="xs"/>
 				{	!status ? 
 					<div className={`${isClicked ? "animate-pulse" : ""}`}>

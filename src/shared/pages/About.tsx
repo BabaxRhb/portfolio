@@ -12,7 +12,7 @@ const About = () => {
             <MarkDownText wrapper='h4'>{t("home.hello")}</MarkDownText>
             {
                 paragraph.map((p, index) => (
-                    <MarkDownText key={'About-' + index} wrapper='p'>{p}</MarkDownText>
+                    <MarkDownText key={'About-' + index} wrapper='p' textAlignement="text-justify">{p}</MarkDownText>
                 ))
             }
         </Container>

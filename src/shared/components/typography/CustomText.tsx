@@ -5,7 +5,7 @@ interface TextProps {
     children: React.ReactNode;
     textColor?: string;
     textWeight?: string;
-    addClass?: string;
+    textAlignement?: string;
     style?: CSSProperties;
 }
 
@@ -39,12 +39,12 @@ const textSizes = {
     def: 'text-base',
 };
 
-const CustomText = ({ variant = 'def', children, textColor, textWeight, addClass, style }: TextProps) => {
+const CustomText = ({ variant = 'def', children, textColor, textWeight, textAlignement, style }: TextProps) => {
 
     const textColorClass = textColors[textColor as keyof typeof textColors] || 'text-text';
     const textWeightClass = textWeights[textWeight as keyof typeof textWeights] || 'font-normal';
     const textSizeClass = textSizes[variant as keyof typeof textSizes] || 'text-base';
-    const defaultStyle = 'text-center' + ' ' + (addClass || '');
+    const defaultStyle = textAlignement ? textAlignement : "text-center";
 
     switch (variant) {
         case 'h1':

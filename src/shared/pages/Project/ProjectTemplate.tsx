@@ -19,12 +19,12 @@ const ProjectTemplate = () => {
 	const { title, techno, type, imgUrl, description, contribution } = project[projectId];
 
 	return (
-		<Container  direction="column" spacing={8}>
+		<Container  direction="column">
 			<Container direction="column" spacing={2}>
 				<CustomText variant="h1" textWeight="bold">{title}</CustomText>
 				<CustomText variant="p" textWeight="light">{type}</CustomText>
 			</Container>
-			<Container direction="column" spacing={5}>
+			<Container direction="column" spacing={3}>
 				<BorderedText variant="h4">{t("project.subtitle.description")}</BorderedText>
 				<CustomText>{description}</CustomText>
 				<Carousel imgUrl={imgUrl ? imgUrl : []}/>

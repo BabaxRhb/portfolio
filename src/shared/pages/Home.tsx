@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
 import Container from "../components/container/Container";
 
-import Avatar from "src/assets/avatar.svg?react";
+import { lazy } from "react";
+const Avatar = lazy(() => import("src/assets/avatar.svg?react"));
 import TypewriterEffect from "../components/typography/TypeWritterEffect";
 
 const Home = () => {

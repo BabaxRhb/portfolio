@@ -42,7 +42,7 @@ const NavMenu = ({ direction} : { direction: string }) => {
 	const baseStyle = "font-bold mx-5 hover:scale-105 transition-all text-xl";
 
 	return (
-		<div className={`flex tablet:relative ${directionClass} w-full`}>
+		<div className={`flex tablet:relative ${directionClass} w-full gap-5`}>
 			<NavigateLinkBtn link={navbarItems[0].link} title={navbarItems[0].title} baseStyle={baseStyle} />
 			<NavigateLinkBtn link={navbarItems[1].link} title={navbarItems[1].title} baseStyle={baseStyle} />
 			<NavigateLinkBtn link={navbarItems[2].link} title={navbarItems[2].title} baseStyle={baseStyle} />
@@ -53,12 +53,12 @@ const NavMenu = ({ direction} : { direction: string }) => {
 				`}
 			>
 				<button
-					className={`max-tablet:text-left text-xl ${baseStyle}`}
+					className={`max-tablet:text-left mb-5 text-xl ${baseStyle}`}
 					onClick={() => setProjectClick(prev => !prev)
 					}>{t("project.title")}</button>
 				{
 					projectClick &&
-						<div className="flex flex-col w-fit tablet:absolute tablet:top-10 z-100 bg-background/75 backdrop-blur-md rounded-md">
+						<div className="flex flex-col w-fit gap-5 tablet:absolute tablet:top-10 z-100 bg-background/75 backdrop-blur-md rounded-md">
 							<NavigateLinkBtn link={navbarItems[3].link} title={navbarItems[3].title} baseStyle={baseStyle} />
 							<NavigateLinkBtn link={navbarItems[4].link} title={navbarItems[4].title} baseStyle={baseStyle} />
 						</div>

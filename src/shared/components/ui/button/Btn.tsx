@@ -37,4 +37,22 @@ const ActionBtn = ({ onClick, size = defaultSize, Icon }: BtnProps) => {
     )
 }
 
-export { NavigationBtn, ActionBtn };
+const GoBackBtn = ({ link } : {link: string}) => {
+
+    const navigate = useNavigate();
+	const btnStyle = `
+        tablet:hidden
+        absolute
+        top-5
+        left-5
+        block
+		bg-secondary
+		text-text
+        text-xl
+		p-2
+		hover:bg-accent
+		w-15 h-15`
+	return <button onClick={() => navigate(link)} className={btnStyle}>{"<"}</button>;
+}
+
+export { NavigationBtn, ActionBtn, GoBackBtn };

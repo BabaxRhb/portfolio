@@ -6,6 +6,7 @@ import Container from "../../components/container/Container";
 import { useTranslation } from "react-i18next";
 import Carousel from "../../components/container/Carousel";
 import type { projectType } from "../../data/type";
+import { GoBackBtn } from "../../components/ui/button/Btn";
 
 const ProjectTemplate = () => {
 
@@ -19,7 +20,8 @@ const ProjectTemplate = () => {
 	const { title, techno, type, imgUrl, description, contribution } = project[projectId];
 
 	return (
-		<Container  direction="column">
+		<Container  direction="column" position="relative">
+			<GoBackBtn link={`/projects/${projectType}`} />
 			<Container direction="column" spacing={2}>
 				<CustomText variant="h1" textWeight="bold">{title}</CustomText>
 				<CustomText variant="p" textWeight="light">{type}</CustomText>

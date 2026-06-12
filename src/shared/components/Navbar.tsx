@@ -53,7 +53,7 @@ const NavMenu = ({ direction} : { direction: string }) => {
 				`}
 			>
 				<button
-					className={`max-tablet:text-left mb-5 text-xl ${baseStyle}`}
+					className={`max-tablet:text-left max-tablet:mb-5 text-xl ${baseStyle}`}
 					onClick={() => setProjectClick(prev => !prev)
 					}>{t("project.title")}</button>
 				{
